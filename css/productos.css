@@ -245,15 +245,19 @@ nav {
     padding: 1rem 2rem;
     background: #cfd8dc;
     font-family: Arial, Tahoma, Serif;
+    width: 100%;
 }
 
 nav ul {
     display: flex;
     list-style: none;
+    margin-right: 2.5rem;
 }
 
 nav li {
-    padding-left: 1rem;
+    padding-left: 2rem;
+    padding-right: 0.5rem;
+
 }
 
 nav a {
