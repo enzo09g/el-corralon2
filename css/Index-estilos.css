@@ -433,7 +433,9 @@ label {
 }
 
 .page-home .overlay {
-    background-color: rgba(14, 17, 24, 0.97);
+    background-color: #DCE1DF;
+    opacity: 0.8;
+    /* background-color: rgba(14, 17, 24, 0.97); */
 }
 
 /* End of container */
