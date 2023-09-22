@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    color: #263238;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #cfd8dc;
+    font-family: Arial, Tahoma, Serif;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 2.5rem;
+}
+
+nav li {
+    padding-left: 2rem;
+    padding-right: 0.5rem;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #0d47a1
+}
+
+/* 
+    Extra small devices (phones, 600px and down) 
+  */
+@media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-top: 0.5rem;
+    }
+
+    nav li {
+        padding: 0.5rem 0;
+    }
+}
+
+/* Menu */

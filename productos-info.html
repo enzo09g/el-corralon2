@@ -6,14 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Productos</title>
   <link rel="stylesheet" href="css/productos-info/productos-info.css">
+  <link rel="stylesheet" href="css/productos-info/navbar-productInfo.css">
+  <link rel="stylesheet" href="css/productos-info/table.css">
 </head>
 
 <body>
+  <nav class="arriba">
+    <h2><a href="index.html">Inicio</a></h2>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+    </ul>
+  </nav>
   <main>
-    <div id="contenedorTitulo">
-
-    </div>
-    <div id="contenedor">
+    <div class="container" id="contenedor">
+      <table>
+        <caption id="contenedorTitulo"></caption>
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Precio</th>
+            <th scope="col">En Stock</th>
+          </tr>
+        </thead>
+        <tbody id="cuerpoTabla">
+          
+        </tbody>
+      </table>
 
     </div>
   </main>
