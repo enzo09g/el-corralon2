@@ -1,9 +1,19 @@
+.contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    letter-spacing: 4px;
+    font-size: 150%;
+}
+
 table {
     border: 1px solid #ccc;
     border-collapse: collapse;
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 95%;
     table-layout: fixed;
   }
   
