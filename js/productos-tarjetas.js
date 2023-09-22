@@ -39,6 +39,17 @@ $(document).ready(function(){
   
         zindex++;
       }
-      
     });
-  });
+      
+      $("a.ir").click(function(e) {
+        e.stopPropagation(); // Evita que el evento de tarjeta se active al hacer clic en el botón "Read more"
+        var url = $(this).closest(".card").data("url"); // Obtiene la URL de la tarjeta actual
+        if (url) {
+            window.location.href = url; // Redirige a la URL correspondiente
+        }
+    });
+});
+
+
+// Codigo JS
+
