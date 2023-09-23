@@ -20,7 +20,7 @@ function mostrarArticulos(array) {
     cuerpoTabla.innerHTML += `
         <tr>
           <td data-label="Nombre">${element.nombre}</td>
-          <td data-label="Precio">${element.precioUnitario} ${element.moneda}</td>
+          <td data-label="Precio">$ ${parseInt((element.precioUnitario * 38))}</td>
           <td data-label="En Stock">${element.publicado}</td>
         </tr>
         `
@@ -28,11 +28,27 @@ function mostrarArticulos(array) {
 }
 
 function cambiarTitulo(array) {
-  let titulo = document.createElement('h1');
-  titulo.textContent = array.titulo
-  contenedorTitulo.appendChild(titulo)
+  let titulo = document.getElementById('titulo');
+  titulo.textContent = array.titulo.toUpperCase();
+}
+
+function buscar(){
+  let buscador = document.getElementById('buscador');
+  let productos = Array.from(document.getElementsByTagName('tr'));
+  productos.forEach(element => {
+    if(!(element.textContent.toLocaleLowerCase().includes(buscador.value.toLocaleLowerCase()))){
+      element.style.display = "none";
+    }
+    else{
+      element.style.display = "table-row"
+    }
+  });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   traerInfo();
+  let buscador = document.getElementById('buscador');
+  buscador.addEventListener('keyup', () =>{
+    buscar();
+  })
 })
