@@ -18,7 +18,7 @@ function traerInfo() {
 function mostrarArticulos(array) {
   array.forEach(element => {
     cuerpoTabla.innerHTML += `
-        <tr>
+        <tr class="fila-producto">
           <td data-label="Nombre">${element.nombre}</td>
           <td data-label="Precio">$ ${parseInt((element.precioUnitario * 38))}</td>
           <td data-label="En Stock">${element.publicado}</td>
@@ -34,7 +34,7 @@ function cambiarTitulo(array) {
 
 function buscar(){
   let buscador = document.getElementById('buscador');
-  let productos = Array.from(document.getElementsByTagName('tr'));
+  let productos = Array.from(document.getElementsByClassName('fila-producto'));
   productos.forEach(element => {
     if(!(element.textContent.toLocaleLowerCase().includes(buscador.value.toLocaleLowerCase()))){
       element.style.display = "none";
