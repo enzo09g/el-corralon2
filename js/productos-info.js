@@ -2,7 +2,9 @@ const contenedorTitulo = document.getElementById('contenedorTitulo');
 const contenedorTabla = document.getElementById('contenedor');
 const cuerpoTabla = document.getElementById('cuerpoTabla');
 
-const URL = 'json/caños.json';
+const catNombre = localStorage.getItem('catNombre');
+const URL = 'json/' + catNombre + '.json'
+// const URL = 'json/caños.json';
 
 
 function traerInfo() {
