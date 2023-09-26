@@ -12,7 +12,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5249",
@@ -25,7 +26,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5250",
@@ -38,7 +40,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5251",
@@ -51,7 +54,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5252",
@@ -64,7 +68,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5253",
@@ -77,7 +82,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5254",
@@ -90,7 +96,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5255",
@@ -103,7 +110,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5356",
@@ -116,7 +124,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5256",
@@ -129,7 +138,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5257",
@@ -142,7 +152,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5258",
@@ -155,7 +166,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5259",
@@ -168,7 +180,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5260",
@@ -181,7 +194,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5261",
@@ -194,7 +208,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5262",
@@ -207,7 +222,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5263",
@@ -220,7 +236,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "6350",
@@ -233,7 +250,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5264",
@@ -246,7 +264,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5265",
@@ -259,7 +278,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5266",
@@ -272,7 +292,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5267",
@@ -285,7 +306,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5268",
@@ -298,7 +320,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5269",
@@ -311,7 +334,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5270",
@@ -324,7 +348,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5271",
@@ -337,7 +362,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5272",
@@ -350,7 +376,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "6538",
@@ -363,7 +390,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5273",
@@ -376,7 +404,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5274",
@@ -389,7 +418,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5276",
@@ -402,7 +432,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5275",
@@ -415,7 +446,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "NO",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5357",
@@ -428,7 +460,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5358",
@@ -441,7 +474,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5361",
@@ -454,7 +488,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5362",
@@ -467,7 +502,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5363",
@@ -480,7 +516,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Cuadrado"
         },
         {
             "codigo": "5031",
@@ -493,7 +530,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Oblongo"
         },
         {
             "codigo": "5032",
@@ -506,7 +544,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Oblongo"
         },
         {
             "codigo": "6238",
@@ -519,7 +558,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "NO",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Perfil"
         },
         {
             "codigo": "5173",
@@ -532,11 +572,12 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "NO",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Perfil"
         },
         {
             "codigo": "7006",
-            "nombre": "B. CAÑO REC 200X100X3.00 (P\/PEDIDO)",
+            "nombre": "B. CAÑO REC 200X100X3.00 (P/PEDIDO)",
             "codificacion": "Familia",
             "clasificacion": "CAÑOS",
             "listaPrecio": "CONTADO USD",
@@ -545,7 +586,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5051",
@@ -558,7 +600,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5279",
@@ -571,7 +614,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5280",
@@ -584,7 +628,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5281",
@@ -597,7 +642,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "NO",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5282",
@@ -610,7 +656,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "NO",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5283",
@@ -623,7 +670,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5284",
@@ -636,7 +684,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5285",
@@ -649,7 +698,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5286",
@@ -662,7 +712,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5287",
@@ -675,7 +726,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "NO",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5289",
@@ -688,7 +740,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5290",
@@ -701,7 +754,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5291",
@@ -715,7 +769,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5685",
@@ -728,7 +783,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5292",
@@ -741,7 +797,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5293",
@@ -754,7 +811,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5364",
@@ -767,7 +825,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5294",
@@ -780,7 +839,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5295",
@@ -793,7 +853,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5296",
@@ -806,7 +867,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5297",
@@ -819,7 +881,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5298",
@@ -832,7 +895,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5365",
@@ -845,7 +909,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5375",
@@ -858,7 +923,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5299",
@@ -871,7 +937,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5300",
@@ -884,7 +951,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5303",
@@ -897,7 +965,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5304",
@@ -910,7 +979,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5388",
@@ -923,7 +993,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5389",
@@ -936,7 +1007,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "NO",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5438",
@@ -949,7 +1021,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "NO",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "6537",
@@ -962,7 +1035,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5306",
@@ -975,7 +1049,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5307",
@@ -988,7 +1063,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5308",
@@ -1001,7 +1077,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5439",
@@ -1014,7 +1091,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5650",
@@ -1027,7 +1105,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5309",
@@ -1040,7 +1119,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5472",
@@ -1053,7 +1133,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5310",
@@ -1066,7 +1147,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5311",
@@ -1079,7 +1161,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5312",
@@ -1092,7 +1175,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5313",
@@ -1105,7 +1189,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "NO",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5314",
@@ -1118,7 +1203,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5315",
@@ -1131,7 +1217,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5849",
@@ -1144,7 +1231,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5482",
@@ -1157,7 +1245,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "NO",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "6604",
@@ -1170,7 +1259,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5501",
@@ -1183,11 +1273,12 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "NO",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "7002",
-            "nombre": "B. CAÑO REC.41* 150X100X2 (P\/PEDIDO)",
+            "nombre": "B. CAÑO REC.41* 150X100X2 (P/PEDIDO)",
             "codificacion": "Familia",
             "clasificacion": "CAÑOS",
             "listaPrecio": "CONTADO USD",
@@ -1196,7 +1287,8 @@
             "unidad": "UNID",
             "precioEditable": "SI",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5517",
@@ -1209,7 +1301,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5526",
@@ -1222,7 +1315,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "NO",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5527",
@@ -1235,7 +1329,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "NO",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5528",
@@ -1248,7 +1343,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "NO",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5529",
@@ -1261,11 +1357,12 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "NO",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "5212",
-            "nombre": "B. CAÑO RED. 3* 5\/8X1.6",
+            "nombre": "B. CAÑO RED. 3* 5/8X1.6",
             "codificacion": "Familia",
             "clasificacion": "CAÑOS",
             "listaPrecio": "CONTADO USD",
@@ -1274,11 +1371,12 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5213",
-            "nombre": "B. CAÑO RED. 4* 5\/8X2",
+            "nombre": "B. CAÑO RED. 4* 5/8X2",
             "codificacion": "Familia",
             "clasificacion": "CAÑOS",
             "listaPrecio": "CONTADO USD",
@@ -1287,11 +1385,12 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5214",
-            "nombre": "B. CAÑO RED. 5* 3\/4X1.6",
+            "nombre": "B. CAÑO RED. 5* 3/4X1.6",
             "codificacion": "Familia",
             "clasificacion": "CAÑOS",
             "listaPrecio": "CONTADO USD",
@@ -1300,11 +1399,12 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5215",
-            "nombre": "B. CAÑO RED. 6* 3\/4X2",
+            "nombre": "B. CAÑO RED. 6* 3/4X2",
             "codificacion": "Familia",
             "clasificacion": "CAÑOS",
             "listaPrecio": "CONTADO USD",
@@ -1313,11 +1413,12 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5217",
-            "nombre": "B. CAÑO RED. 8* 7\/8X1.6",
+            "nombre": "B. CAÑO RED. 8* 7/8X1.6",
             "codificacion": "Familia",
             "clasificacion": "CAÑOS",
             "listaPrecio": "CONTADO USD",
@@ -1326,11 +1427,12 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5218",
-            "nombre": "B. CAÑO RED. 9* 7\/8X2",
+            "nombre": "B. CAÑO RED. 9* 7/8X2",
             "codificacion": "Familia",
             "clasificacion": "CAÑOS",
             "listaPrecio": "CONTADO USD",
@@ -1339,7 +1441,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5219",
@@ -1352,7 +1455,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5220",
@@ -1365,11 +1469,12 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5221",
-            "nombre": "B. CAÑO RED.12* 1.1\/8X1.6",
+            "nombre": "B. CAÑO RED.12* 1.1/8X1.6",
             "codificacion": "Familia",
             "clasificacion": "CAÑOS",
             "listaPrecio": "CONTADO USD",
@@ -1378,11 +1483,12 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5222",
-            "nombre": "B. CAÑO RED.13* 1.1\/4X1.6",
+            "nombre": "B. CAÑO RED.13* 1.1/4X1.6",
             "codificacion": "Familia",
             "clasificacion": "CAÑOS",
             "listaPrecio": "CONTADO USD",
@@ -1391,11 +1497,12 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5223",
-            "nombre": "B. CAÑO RED.14* 1.1\/4X2",
+            "nombre": "B. CAÑO RED.14* 1.1/4X2",
             "codificacion": "Familia",
             "clasificacion": "CAÑOS",
             "listaPrecio": "CONTADO USD",
@@ -1404,11 +1511,12 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5224",
-            "nombre": "B. CAÑO RED.15* 1.1\/2X1.6",
+            "nombre": "B. CAÑO RED.15* 1.1/2X1.6",
             "codificacion": "Familia",
             "clasificacion": "CAÑOS",
             "listaPrecio": "CONTADO USD",
@@ -1417,11 +1525,12 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5225",
-            "nombre": "B. CAÑO RED.16* 1.1\/2X2",
+            "nombre": "B. CAÑO RED.16* 1.1/2X2",
             "codificacion": "Familia",
             "clasificacion": "CAÑOS",
             "listaPrecio": "CONTADO USD",
@@ -1430,11 +1539,12 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5228",
-            "nombre": "B. CAÑO RED.19* 1.3\/4X1.6",
+            "nombre": "B. CAÑO RED.19* 1.3/4X1.6",
             "codificacion": "Familia",
             "clasificacion": "CAÑOS",
             "listaPrecio": "CONTADO USD",
@@ -1443,11 +1553,12 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5229",
-            "nombre": "B. CAÑO RED.20* 1.3\/4X2",
+            "nombre": "B. CAÑO RED.20* 1.3/4X2",
             "codificacion": "Familia",
             "clasificacion": "CAÑOS",
             "listaPrecio": "CONTADO USD",
@@ -1456,11 +1567,12 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5230",
-            "nombre": "B. CAÑO RED.21* 1.3\/4X3.2",
+            "nombre": "B. CAÑO RED.21* 1.3/4X3.2",
             "codificacion": "Familia",
             "clasificacion": "CAÑOS",
             "listaPrecio": "CONTADO USD",
@@ -1469,11 +1581,12 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5231",
-            "nombre": "B. CAÑO RED.22* 1.7\/8X1.6",
+            "nombre": "B. CAÑO RED.22* 1.7/8X1.6",
             "codificacion": "Familia",
             "clasificacion": "CAÑOS",
             "listaPrecio": "CONTADO USD",
@@ -1482,7 +1595,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "NO",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5233",
@@ -1495,7 +1609,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5234",
@@ -1508,7 +1623,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5235",
@@ -1521,11 +1637,12 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5236",
-            "nombre": "B. CAÑO RED.27* 2.1\/4X1.6",
+            "nombre": "B. CAÑO RED.27* 2.1/4X1.6",
             "codificacion": "Familia",
             "clasificacion": "CAÑOS",
             "listaPrecio": "CONTADO USD",
@@ -1534,11 +1651,12 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5237",
-            "nombre": "B. CAÑO RED.28* 2.1\/2X1.6",
+            "nombre": "B. CAÑO RED.28* 2.1/2X1.6",
             "codificacion": "Familia",
             "clasificacion": "CAÑOS",
             "listaPrecio": "CONTADO USD",
@@ -1547,11 +1665,12 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5238",
-            "nombre": "B. CAÑO RED.29* 2.1\/2X2",
+            "nombre": "B. CAÑO RED.29* 2.1/2X2",
             "codificacion": "Familia",
             "clasificacion": "CAÑOS",
             "listaPrecio": "CONTADO USD",
@@ -1560,7 +1679,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5239",
@@ -1573,7 +1693,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5240",
@@ -1586,7 +1707,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5241",
@@ -1599,11 +1721,12 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5242",
-            "nombre": "B. CAÑO RED.33* 3.1\/2X2",
+            "nombre": "B. CAÑO RED.33* 3.1/2X2",
             "codificacion": "Familia",
             "clasificacion": "CAÑOS",
             "listaPrecio": "CONTADO USD",
@@ -1612,7 +1735,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5243",
@@ -1625,7 +1749,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5244",
@@ -1638,7 +1763,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5245",
@@ -1651,7 +1777,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5504",
@@ -1664,7 +1791,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5514",
@@ -1677,7 +1805,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5516",
@@ -1690,7 +1819,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "NO",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "5052",
@@ -1703,7 +1833,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Redondo"
         },
         {
             "codigo": "6522",
@@ -1716,7 +1847,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "6521",
@@ -1729,7 +1861,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "6132",
@@ -1742,7 +1875,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "6133",
@@ -1755,7 +1889,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "6134",
@@ -1768,7 +1903,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "6135",
@@ -1781,7 +1917,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "6136",
@@ -1794,7 +1931,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         },
         {
             "codigo": "6137",
@@ -1807,7 +1945,8 @@
             "unidad": "UNID",
             "precioEditable": "NO",
             "activo": "SI",
-            "publicado": "SI"
+            "publicado": "SI",
+            "tipo": "Recto"
         }
     ]
 }
