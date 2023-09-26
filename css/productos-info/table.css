@@ -73,6 +73,10 @@ table td {
   text-align: center;
 }
 
+.tabla-nombre{
+  text-align: justify;
+}
+
 table th {
   font-size: .85em;
   letter-spacing: .1em;
@@ -109,7 +113,6 @@ table th {
     border-bottom: 1px solid #ddd;
     display: block;
     font-size: .8em;
-    text-align: right;
   }
 
   table td::before {
