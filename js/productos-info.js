@@ -20,7 +20,7 @@ function traerInfo() {
 function mostrarArticulos(array) {
   array.forEach(element => {
     cuerpoTabla.innerHTML += `
-        <tr data-descripcion="${element.codigo}" class="fila-producto">
+        <tr data-descripcion="${element.tipo}" class="fila-producto">
           <td data-label="Nombre">${element.nombre}</td>
           <td data-label="Precio">$ ${parseInt((element.precioUnitario * 38))}</td>
           <td data-label="En Stock">${element.publicado}</td>
