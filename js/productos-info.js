@@ -3,12 +3,11 @@ const contenedorTabla = document.getElementById('contenedor');
 const cuerpoTabla = document.getElementById('cuerpoTabla');
 
 const catNombre = localStorage.getItem('catNombre');
-const URL = 'json/' + catNombre + '.json'
-// const URL = 'json/caños.json';
+let URL = 'json/' + catNombre + '.json'
 
 
-function traerInfo() {
-  fetch(URL)
+function traerInfo(jsonURL) {
+  fetch(jsonURL)
     .then(Response => Response.json())
     .then(data => {
       console.log(data.titulo);
@@ -18,6 +17,7 @@ function traerInfo() {
 }
 
 function mostrarArticulos(array) {
+  cuerpoTabla.innerHTML = ''
   array.forEach(element => {
     cuerpoTabla.innerHTML += `
         <tr data-descripcion="${element.tipo}" class="fila-producto">
@@ -48,10 +48,16 @@ function buscar(){
   });
 }
 
+
 document.addEventListener('DOMContentLoaded', () => {
-  traerInfo();
+  traerInfo(URL);
   let buscador = document.getElementById('buscador');
+  let selector = document.getElementById('selector');
   buscador.addEventListener('keyup', () =>{
     buscar();
+  })
+  selector.addEventListener('change', (event) =>{
+    URL = 'json/' + event.target.value + '.json'
+    traerInfo(URL)
   })
 })
