@@ -587,7 +587,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5051",
@@ -601,7 +601,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5279",
@@ -615,7 +615,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5280",
@@ -629,7 +629,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5281",
@@ -643,7 +643,7 @@
             "precioEditable": "NO",
             "activo": "NO",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5282",
@@ -657,7 +657,7 @@
             "precioEditable": "NO",
             "activo": "NO",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5283",
@@ -671,7 +671,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5284",
@@ -685,7 +685,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5285",
@@ -699,7 +699,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5286",
@@ -713,7 +713,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5287",
@@ -727,7 +727,7 @@
             "precioEditable": "NO",
             "activo": "NO",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5289",
@@ -741,7 +741,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5290",
@@ -755,7 +755,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5291",
@@ -770,7 +770,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5685",
@@ -784,7 +784,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5292",
@@ -798,7 +798,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5293",
@@ -812,7 +812,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5364",
@@ -826,7 +826,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5294",
@@ -840,7 +840,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5295",
@@ -854,7 +854,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5296",
@@ -868,7 +868,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5297",
@@ -882,7 +882,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5298",
@@ -896,7 +896,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5365",
@@ -910,7 +910,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5375",
@@ -924,7 +924,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5299",
@@ -938,7 +938,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5300",
@@ -952,7 +952,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5303",
@@ -966,7 +966,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5304",
@@ -980,7 +980,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5388",
@@ -994,7 +994,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5389",
@@ -1008,7 +1008,7 @@
             "precioEditable": "NO",
             "activo": "NO",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5438",
@@ -1022,7 +1022,7 @@
             "precioEditable": "NO",
             "activo": "NO",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "6537",
@@ -1036,7 +1036,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5306",
@@ -1050,7 +1050,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5307",
@@ -1064,7 +1064,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5308",
@@ -1078,7 +1078,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5439",
@@ -1092,7 +1092,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5650",
@@ -1106,7 +1106,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5309",
@@ -1120,7 +1120,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5472",
@@ -1134,7 +1134,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5310",
@@ -1148,7 +1148,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5311",
@@ -1162,7 +1162,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5312",
@@ -1176,7 +1176,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5313",
@@ -1190,7 +1190,7 @@
             "precioEditable": "NO",
             "activo": "NO",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5314",
@@ -1204,7 +1204,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5315",
@@ -1218,7 +1218,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5849",
@@ -1232,7 +1232,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5482",
@@ -1246,7 +1246,7 @@
             "precioEditable": "NO",
             "activo": "NO",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "6604",
@@ -1260,7 +1260,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5501",
@@ -1274,7 +1274,7 @@
             "precioEditable": "NO",
             "activo": "NO",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "7002",
@@ -1288,7 +1288,7 @@
             "precioEditable": "SI",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5517",
@@ -1302,7 +1302,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5526",
@@ -1316,7 +1316,7 @@
             "precioEditable": "NO",
             "activo": "NO",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5527",
@@ -1330,7 +1330,7 @@
             "precioEditable": "NO",
             "activo": "NO",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5528",
@@ -1344,7 +1344,7 @@
             "precioEditable": "NO",
             "activo": "NO",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5529",
@@ -1358,7 +1358,7 @@
             "precioEditable": "NO",
             "activo": "NO",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "5212",
@@ -1848,7 +1848,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "6521",
@@ -1862,7 +1862,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "6132",
@@ -1876,7 +1876,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "6133",
@@ -1890,7 +1890,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "6134",
@@ -1904,7 +1904,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "6135",
@@ -1918,7 +1918,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "6136",
@@ -1932,7 +1932,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         },
         {
             "codigo": "6137",
@@ -1946,7 +1946,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "Recto"
+            "tipo": "rectangular"
         }
     ]
 }
