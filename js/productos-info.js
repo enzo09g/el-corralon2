@@ -33,10 +33,12 @@ function jsonNombre() {
 
 function cantidadTipos(array) {
   tipos = [];
-  tipos.push(array[0].tipo);
+
   for (let i of array) {
-    if (!(tipos.includes(i.tipo))) {
-      tipos.push(i.tipo);
+    if (i.tipo) {
+      if (!(tipos.includes(i.tipo))) {
+        tipos.push(i.tipo);
+      }
     }
   }
 }
@@ -51,11 +53,13 @@ function mostrarOpciones() {
   opcionDisable.textContent = "Seleccione una categoria"
   opcionDisable.setAttribute("disabled", "disabled");
   selector.appendChild(opcionDisable);
-  for (let i of tipos) {
-    let opcion = document.createElement('option');
-    opcion.value = i.toLowerCase();
-    opcion.textContent = i.toUpperCase();
-    selector.appendChild(opcion)
+  if (tipos.length > 0) {
+    for (let i of tipos) {
+      let opcion = document.createElement('option');
+      opcion.value = i.toLowerCase();
+      opcion.textContent = i.toUpperCase();
+      selector.appendChild(opcion)
+    }
   }
 }
 
@@ -110,9 +114,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   selectorFiltro = document.getElementById('selector-filtro');
   selectorFiltro.addEventListener('change', (event) => {
-    if(event.target.value == 'redondo'){
-      
-      mostrarArticulos()
-    }
+    
+    let arrayChange = Array.from(arrayProductos.objeto)
+    let arrayFiltro = [];
+    let filtro = event.target.value;
+
+    arrayChange.forEach(element =>{
+      if(element.tipo.toLowerCase() === filtro){
+        arrayFiltro.push(element);
+      }
+    })
+
+    mostrarArticulos(arrayFiltro)
   })
 })
