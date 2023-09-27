@@ -35,8 +35,9 @@
 /*Resize the wrap to see the search bar change!*/
 .wrap {
   width: 100%;
-  margin-top: 10px;
+  margin-top: 20px;
   transform: translate(-50%, -50%);
+  min-width: 80px;
 }
 
 /* Fin Buscador */
@@ -70,6 +71,10 @@ table th,
 table td {
   padding: .625em;
   text-align: center;
+}
+
+.tabla-nombre{
+  text-align: justify;
 }
 
 table th {
@@ -108,7 +113,6 @@ table th {
     border-bottom: 1px solid #ddd;
     display: block;
     font-size: .8em;
-    text-align: right;
   }
 
   table td::before {
