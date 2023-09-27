@@ -16,14 +16,14 @@ function traerInfo(json) {
     })
 }
 
-function jsonNombre(){
+function jsonNombre() {
   let catNombre = localStorage.getItem('catNombre');
   let URL = 'json/' + catNombre + '.json'
   return URL;
 }
 
 function mostrarOpciones() {
-  
+
 }
 
 function mostrarArticulos(array) {
