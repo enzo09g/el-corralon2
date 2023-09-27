@@ -1,10 +1,7 @@
 const contenedorTitulo = document.getElementById('contenedorTitulo');
 const contenedorTabla = document.getElementById('contenedor');
 const cuerpoTabla = document.getElementById('cuerpoTabla');
-
-// const catNombre = localStorage.getItem('catNombre');
-// let URL = 'json/' + catNombre + '.json'
-
+let tipos = [];
 
 function traerInfo(json) {
   fetch(json)
@@ -13,6 +10,8 @@ function traerInfo(json) {
       console.log(data.titulo);
       cambiarTitulo(data);
       mostrarArticulos(data.objeto)
+      cantidadTipos(data.objeto)
+      mostrarOpciones()
     })
 }
 
@@ -22,9 +21,34 @@ function jsonNombre() {
   return URL;
 }
 
-function mostrarOpciones() {
-
+function cantidadTipos(array) {
+  tipos = [];
+  tipos.push(array[0].tipo);
+  for (let i of array) {
+    if (!(tipos.includes(i.tipo))) {
+      tipos.push(i.tipo);
+    }
+  }
 }
+
+function mostrarOpciones() {
+  let selector = document.getElementById('selector-filtro');
+  selector.innerHTML = "";
+
+  let opcionDisable = document.createElement('option');
+  opcionDisable.value = "";
+  opcionDisable.selected = true;
+  opcionDisable.textContent = "Seleccione una categoria"
+  opcionDisable.setAttribute("disabled", "disabled");
+  selector.appendChild(opcionDisable);
+  for (let i of tipos) {
+    let opcion = document.createElement('option');
+    opcion.value = i.toLowerCase();
+    opcion.textContent = i.toUpperCase();
+    selector.appendChild(opcion)
+  }
+}
+
 
 function mostrarArticulos(array) {
   cuerpoTabla.innerHTML = ''
