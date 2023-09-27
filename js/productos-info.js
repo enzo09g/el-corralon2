@@ -3,6 +3,8 @@ const contenedorTabla = document.getElementById('contenedor');
 const cuerpoTabla = document.getElementById('cuerpoTabla');
 let tipos = [];
 
+let arrayProductos;
+
 function traerInfo(json) {
   fetch(json)
     .then(Response => Response.json())
@@ -12,6 +14,14 @@ function traerInfo(json) {
       mostrarArticulos(data.objeto)
       cantidadTipos(data.objeto)
       mostrarOpciones()
+    })
+}
+
+function fetchData(json) {
+  fetch(json)
+    .then(response => response.json())
+    .then(data => {
+      arrayProductos = data;
     })
 }
 
@@ -84,14 +94,25 @@ function buscar() {
 
 
 document.addEventListener('DOMContentLoaded', () => {
+  fetchData(jsonNombre());
   traerInfo(jsonNombre());
   let buscador = document.getElementById('buscador');
   let selector = document.getElementById('selector');
+
   buscador.addEventListener('keyup', () => {
     buscar();
   })
+
   selector.addEventListener('change', (event) => {
     localStorage.setItem('catNombre', event.target.value)
     traerInfo(jsonNombre());
+  })
+
+  selectorFiltro = document.getElementById('selector-filtro');
+  selectorFiltro.addEventListener('change', (event) => {
+    if(event.target.value == 'redondo'){
+      
+      mostrarArticulos()
+    }
   })
 })
