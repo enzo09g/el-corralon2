@@ -116,14 +116,8 @@ document.addEventListener('DOMContentLoaded', () => {
   selectorFiltro.addEventListener('change', (event) => {
     
     let arrayChange = Array.from(arrayProductos.objeto)
-    let arrayFiltro = [];
-    let filtro = event.target.value;
-
-    arrayChange.forEach(element =>{
-      if(element.tipo.toLowerCase() === filtro){
-        arrayFiltro.push(element);
-      }
-    })
+    let filtro = event.target.value.toLowerCase();
+    let arrayFiltro = arrayChange.filter(element => element.tipo.toLowerCase() === filtro);
 
     mostrarArticulos(arrayFiltro)
   })
