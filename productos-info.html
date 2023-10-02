@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Productos</title>
-  <link rel="stylesheet" href="css/productos-info/productos-info.css">
   <link rel="stylesheet" href="css/productos-info/navbar-productInfo.css">
   <link rel="stylesheet" href="css/productos-info/table.css">
   <link rel="stylesheet" href="css/productos-info/selector-categoria.css">
@@ -22,13 +21,17 @@
   </nav>
   <main>
     <div id="contTitulo">
-      <h1 id="titulo"></h1>
-      <div id="contBuscador">
+      <div>
+        <h1 id="titulo"></h1>
+      </div>
+
+      <div class="controladores">
         <div class="wrap">
           <div class="search">
             <input id="buscador" type="text" class="searchTerm" placeholder="Buscar...">
           </div>
         </div>
+
         <div id="selector-categoria">
           <label for="selector">
             <select id="selector">
@@ -42,18 +45,25 @@
             </select>
           </label>
         </div>
+
         <div id="cont-select-filtro">
           <label for="selector-filtro">
             <select id="selector-filtro">
 
             </select>
-          </label>   
-          <div>
-            <button class="btn-quitar-filtro"></button>
-          </div>
+          </label>
+
+        </div>
+
+        <div class="btn-Quitar-filtro">
+          <button id="btn-quitar-filtro">Limpiar</button>
         </div>
       </div>
+
+
     </div>
+
+
     <div class="contenedor" id="contenedor">
       <table>
         <thead>

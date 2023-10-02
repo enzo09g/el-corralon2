@@ -1,9 +1,30 @@
 /* Titulo y buscador */
+
+
 #contTitulo {
-  display: flex;
   padding: 20px;
+  display: flex;
   justify-content: space-between;
 }
+
+.controladores {
+  display: flex;
+}
+
+#btn-quitar-filtro {
+  border: none;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  font-size: 1rem;
+  cursor: pointer;
+  /* font-family: inherit; */
+  font-family: "Open Sans", sans-serif;
+  padding: 0.43rem 0.55rem;
+  background-color: #fff;
+}
+
 
 #contTitulo h1 {
   letter-spacing: 4px;
@@ -35,10 +56,16 @@
 /*Resize the wrap to see the search bar change!*/
 .wrap {
   width: 100%;
-  margin-top: 27px;
-  transform: translate(-50%, -50%);
-  min-width: 80px;
+  margin-right: 27px;
+  min-width: 150px;
+  /* transform: translate(-50%, -50%); */
 }
+
+/* Media prueba */
+
+
+
+/* fsd */
 
 /* Fin Buscador */
 .contenedor {
@@ -73,7 +100,7 @@ table td {
   text-align: center;
 }
 
-.tabla-nombre{
+.tabla-nombre {
   text-align: justify;
 }
 
@@ -137,4 +164,39 @@ body {
   line-height: 1.25;
   background-color: #DCE1DF;
   overflow-x: hidden;
+}
+
+
+@media screen and (max-width: 912px) {
+
+  .controladores {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+  }
+
+  #selector-categoria {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  #cont-select-filtro {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  /* .btn-Quitar-filtro {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    display: flex;
+    justify-content: center;
+    
+  } */
+
+  .wrap {
+    width: auto;
+  }
+
+
+
 }
