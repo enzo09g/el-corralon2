@@ -2,88 +2,95 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Productos</title>
-  <link rel="stylesheet" href="css/productos-info/navbar-productInfo.css">
-  <link rel="stylesheet" href="css/productos-info/table.css">
-  <link rel="stylesheet" href="css/productos-info/selector-categoria.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="css/productos-info/navbar-productInfo.css">
+    <link rel="stylesheet" href="css/productos-info/table.css">
+    <link rel="stylesheet" href="css/productos-info/selector-categoria.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <nav class="arriba">
-    <h2><a href="index.html">Inicio</a></h2>
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-      <li><a href="nosotros.html">Nosotros</a></li>
-    </ul>
-  </nav>
-  <main>
-    <div id="contTitulo">
-      <div>
-        <h1 id="titulo"></h1>
-      </div>
+    <nav class="arriba">
+        <h2><a href="index.html">Inicio</a></h2>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="contTitulo" class="row">
+            <div class="col-sm-12 col-lg-6">
+                <h1 class="display-5" id="titulo"></h1>
+            </div>
 
-      <div class="controladores">
-        <div class="wrap">
-          <div class="search">
-            <input id="buscador" type="text" class="searchTerm" placeholder="Buscar...">
-          </div>
+            <div class="controladores row col-sm-12 col-lg-6 justify-content-between">
+                <div class="col-sm-12 col-lg-6 row">
+
+                    <div class="p-0 col-sm-12 col-lg-6">
+                        <input class="form-control" id="buscador" type="text" placeholder="Buscar...">
+                    </div>
+                    <div class="px-1 col-sm-12 col-lg-6">
+                        <label for="selector">
+                            <select class="form-select" id="selector">
+                                <option value="" selected disabled>CATEGORIA</option>
+                                <option value="caños">Caños estructurales</option>
+                                <option value="varillas">Varillas</option>
+                                <option>Tulip</option>
+                                <option>Lily</option>
+                                <option>Lotus</option>
+                                <option>Apricot blossom</option>
+                            </select>
+                        </label>
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-lg-6 row">
+
+                    <div class="p-0 col-sm-12 col-lg-6">
+                        <label for="selector-filtro">
+                            <select class="form-select" id="selector-filtro">
+
+                            </select>
+                        </label>
+                    </div>
+                    <div class="p-0 col-sm-12 col-lg-6">
+                        <button class="mx-1 btn btn-info" id="btn-quitar-filtro">Limpiar</button>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
-        <div id="selector-categoria">
-          <label for="selector">
-            <select id="selector">
-              <option value="" selected disabled>Selecciona una opción</option>
-              <option value="caños">Caños estructurales</option>
-              <option value="varillas">Varillas</option>
-              <option>Tulip</option>
-              <option>Lily</option>
-              <option>Lotus</option>
-              <option>Apricot blossom</option>
-            </select>
-          </label>
-        </div>
 
-        <div id="cont-select-filtro">
-          <label for="selector-filtro">
-            <select id="selector-filtro">
 
-            </select>
-          </label>
+
+        <div class="contenedor" id="contenedor">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">En Stock</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpoTabla">
+
+                </tbody>
+            </table>
 
         </div>
+    </main>
+    <footer>
 
-        <div class="btn-Quitar-filtro">
-          <button id="btn-quitar-filtro">Limpiar</button>
-        </div>
-      </div>
-
-
-    </div>
-
-
-    <div class="contenedor" id="contenedor">
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">Nombre</th>
-            <th scope="col">Precio</th>
-            <th scope="col">En Stock</th>
-          </tr>
-        </thead>
-        <tbody id="cuerpoTabla">
-
-        </tbody>
-      </table>
-
-    </div>
-  </main>
-  <footer>
-
-  </footer>
-  <script src="js/productos-info.js"></script>
+    </footer>
+    <script src="js/productos-info.js"></script>
 </body>
 
 </html>

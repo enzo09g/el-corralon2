@@ -50,7 +50,7 @@ function mostrarOpciones() {
   let opcionDisable = document.createElement('option');
   opcionDisable.value = "";
   opcionDisable.selected = true;
-  opcionDisable.textContent = "Seleccione una categoria"
+  opcionDisable.textContent = "TIPO"
   opcionDisable.setAttribute("disabled", "disabled");
   selector.appendChild(opcionDisable);
   if (tipos.length > 0) {
