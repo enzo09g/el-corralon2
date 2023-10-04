@@ -1,0 +1,79 @@
+
+.controladores{
+    justify-content: space-between;
+}
+
+.c-c-3{
+    display: flex;
+    justify-content: end;
+}
+
+.c-c-4{
+    display: flex;
+    justify-content: start;
+}
+
+
+@media (max-width: 992px){
+
+    .cont-titulo{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .c-c-1{
+        display: flex;
+        justify-content: end;
+    }
+
+    .c-c-2{
+        display: flex;
+        justify-content: start;
+    }
+
+    .c-c-3{
+        display: flex;
+        justify-content: end;
+    }
+
+    .c-c-4{
+        display: flex;
+        justify-content: start;
+    }
+
+    .c-buscador{
+        max-width: 200px;
+    }
+}
+@media (max-width: 768px){
+    .cont-titulo{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .c-c-1{
+        display: flex;
+        justify-content: center;
+    }
+
+    .c-c-2{
+        display: flex;
+        justify-content: center;
+    }
+
+    .c-c-3{
+        display: flex;
+        justify-content: center;
+    }
+
+    .c-c-4{
+        display: flex;
+        justify-content: center;
+    }
+
+    .c-buscador{
+        max-width: 200px;
+    }
+}
