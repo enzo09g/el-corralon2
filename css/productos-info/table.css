@@ -1,20 +1,17 @@
 /* Titulo y buscador */
 
 
-#contTitulo {
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
+#contOpciones {
+  padding: 25px;
 }
 
 .controladores {
   display: flex;
 }
 
-#contTitulo h1 {
+#contOpciones h1 {
   letter-spacing: 4px;
-  font-size: 225%;
-  margin-right: 2.5em;
+  font-size: 255%;
 }
 
 /* Titulo y buscador */
