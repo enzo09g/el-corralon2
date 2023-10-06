@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     let buscador = document.getElementById('buscador')
-    buscador.addEventListener('keyup', () =>{
+    buscador.addEventListener('keyup', () => {
         buscar(buscador)
     });
 
