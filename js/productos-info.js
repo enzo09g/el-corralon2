@@ -1,8 +1,12 @@
+// Obtener referencias a elementos del DOM por su ID
 const contenedorTitulo = document.getElementById('contenedorTitulo');
 const contenedorTabla = document.getElementById('contenedor');
 const cuerpoTabla = document.getElementById('cuerpoTabla');
+
+// Declarar un arreglo vacío para almacenar tipos de productos
 let tipos = [];
 
+// Esta variable tendra la info del fetch traerInfo()
 let arrayProductos;
 
 function traerInfo(json) {
@@ -14,10 +18,11 @@ function traerInfo(json) {
       mostrarArticulos(data.objeto)
       cantidadTipos(data.objeto)
       mostrarOpciones()
+      fetchData(jsonNombre())
     })
 }
 
-function fetchData(json) {
+function fetchData(json) {   //Actualiza arrayProductos
   fetch(json)
     .then(response => response.json())
     .then(data => {
@@ -25,7 +30,7 @@ function fetchData(json) {
     })
 }
 
-function jsonNombre() {
+function jsonNombre() {   // Retorna el nombre del JSON del local storage
   let catNombre = localStorage.getItem('catNombre');
   let URL = 'json/' + catNombre + '.json'
   return URL;
@@ -98,7 +103,7 @@ function buscar() {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  fetchData(jsonNombre());
+  // fetchData(jsonNombre());  Si hay error desomentar!
   traerInfo(jsonNombre());
   let buscador = document.getElementById('buscador');
   let selector = document.getElementById('selector');
