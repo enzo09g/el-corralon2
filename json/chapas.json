@@ -563,7 +563,7 @@
         },
         {
             "codigo": "6044",
-            "nombre": "CHAPA economica titan ECO ANG. 8 PIES (2.44 MTS)",
+            "nombre": "CHAPA TITAN ECO ANG. 8 PIES (2.44 MTS)",
             "codificacion": "Familia",
             "clasificacion": "CHAPAS Y ACCESORIOS",
             "listaPrecio": "CONTADO USD",
@@ -577,7 +577,7 @@
         },
         {
             "codigo": "6045",
-            "nombre": "CHAPA economica titan ECO ANG.10 PIES (3.05 MTS)",
+            "nombre": "CHAPA TITAN ECO ANG.10 PIES (3.05 MTS)",
             "codificacion": "Familia",
             "clasificacion": "CHAPAS Y ACCESORIOS",
             "listaPrecio": "CONTADO USD",
@@ -591,7 +591,7 @@
         },
         {
             "codigo": "6046",
-            "nombre": "CHAPA economica titan ECO ANG.12 PIES (3.65 MTS)",
+            "nombre": "CHAPA TITAN ECO ANG.12 PIES (3.65 MTS)",
             "codificacion": "Familia",
             "clasificacion": "CHAPAS Y ACCESORIOS",
             "listaPrecio": "CONTADO USD",
@@ -605,7 +605,7 @@
         },
         {
             "codigo": "6047",
-            "nombre": "CHAPA economica titan ECO ANG.15 PIES (4.57 MTS)",
+            "nombre": "CHAPA TITAN ECO ANG.15 PIES (4.57 MTS)",
             "codificacion": "Familia",
             "clasificacion": "CHAPAS Y ACCESORIOS",
             "listaPrecio": "CONTADO USD",
@@ -629,7 +629,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "traslucida"
+            "tipo": "translucida"
         },
         {
             "codigo": "5112",
@@ -643,7 +643,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "traslucida"
+            "tipo": "translucida"
         },
         {
             "codigo": "5111",
@@ -657,7 +657,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "traslucida"
+            "tipo": "translucida"
         },
         {
             "codigo": "5108",
@@ -671,7 +671,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "traslucida"
+            "tipo": "translucida"
         },
         {
             "codigo": "5657",
@@ -685,7 +685,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "traslucida"
+            "tipo": "translucida"
         },
         {
             "codigo": "5658",
@@ -699,7 +699,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "traslucida"
+            "tipo": "translucida"
         },
         {
             "codigo": "5665",
@@ -713,7 +713,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "traslucida"
+            "tipo": "translucida"
         },
         {
             "codigo": "5666",
@@ -727,7 +727,7 @@
             "precioEditable": "NO",
             "activo": "SI",
             "publicado": "SI",
-            "tipo": "traslucida"
+            "tipo": "translucida"
         },
         {
             "codigo": "6091",

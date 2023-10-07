@@ -45,6 +45,7 @@ $(document).ready(function () {
     e.stopPropagation(); // Evita que el evento de tarjeta se active al hacer clic en el botón "Read more"
     var url = $(this).closest(".card").data("url"); // Obtiene la URL de la tarjeta actual
     var catNombre = $(this).closest(".card").data("catnombre"); // Obtiene el valor de data-catNombre
+    localStorage.setItem('tipoNombre', "none");
 
     if (catNombre) {
       // Guarda el valor de data-catNombre en el almacenamiento local
@@ -60,3 +61,11 @@ $(document).ready(function () {
 
 // Codigo JS
 
+
+
+function trasladarse(event){
+  let dataValue = event.target.getAttribute("data-value");
+  console.log(dataValue)
+  localStorage.setItem('tipoNombre', dataValue);
+  window.location = "productos-info.html";
+}

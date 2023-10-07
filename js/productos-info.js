@@ -16,9 +16,10 @@ function traerInfo(json) {
       console.log(data.titulo);
       cambiarTitulo(data);
       mostrarArticulos(data.objeto)
-      cantidadTipos(data.objeto)
-      mostrarOpciones()
+      actualizarTipos(data.objeto)
+      actualizarOpciones()
       fetchData(jsonNombre())
+      preFiltro()
     })
 }
 
@@ -36,7 +37,7 @@ function jsonNombre() {   // Retorna el nombre del JSON del local storage
   return URL;
 }
 
-function cantidadTipos(array) {
+function actualizarTipos(array) {
   tipos = [];
 
   for (let i of array) {
@@ -48,7 +49,7 @@ function cantidadTipos(array) {
   }
 }
 
-function mostrarOpciones() {
+function actualizarOpciones() {
   let selector = document.getElementById('selector-filtro');
   selector.innerHTML = "";
 
@@ -64,6 +65,19 @@ function mostrarOpciones() {
       opcion.value = i.toLowerCase();
       opcion.textContent = i.toUpperCase();
       selector.appendChild(opcion)
+    }
+  }
+}
+
+function preFiltro() {
+  let selector = document.getElementById('selector-filtro');
+  let selectOpcion = localStorage.getItem('tipoNombre');
+
+  for (let i = 0; i < tipos.length; i++) {
+    if (selectOpcion == tipos[i].toLowerCase()) {
+      var event = new Event("change", { bubbles: true });
+      selector.selectedIndex = (i+1);
+      selector.dispatchEvent(event)
     }
   }
 }
@@ -103,7 +117,8 @@ function buscar() {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  // fetchData(jsonNombre());  Si hay error desomentar!
+
+  fetchData(jsonNombre());    // Se usa aqui fetchData para actualizar arrayDatos, ya que el fetch de fetchData dentro de traerInfo no llega a completarse correctamente(dentro de otras funciones en general)
   traerInfo(jsonNombre());
   let buscador = document.getElementById('buscador');
   let selector = document.getElementById('selector');
@@ -114,14 +129,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   selector.addEventListener('change', (event) => {
     localStorage.setItem('catNombre', event.target.value)
+    localStorage.removeItem('tipoNombre');
     traerInfo(jsonNombre());
   })
 
   selectorFiltro = document.getElementById('selector-filtro');
   selectorFiltro.addEventListener('change', (event) => {
-    
+
     let arrayChange = Array.from(arrayProductos.objeto)
-    let filtro = event.target.value.toLowerCase();
+    let filtro = selectorFiltro.value.toLowerCase();
     let arrayFiltro = arrayChange.filter(element => element.tipo.toLowerCase() === filtro);
 
     mostrarArticulos(arrayFiltro)
