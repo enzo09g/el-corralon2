@@ -82,6 +82,24 @@ function preFiltro() {
   }
 }
 
+// Se puede mejorar
+function limpiarFIltros(){                      
+  let buscador = document.getElementById('buscador');
+  let selector = document.getElementById('selector-filtro');
+  if(selector.selectedIndex != 0){
+    traerInfo(jsonNombre())
+  }
+  if(buscador.value != ""){
+    console.log("hola")
+    let event = new Event('keyup', {bubbles: true});
+    buscador.value = "";
+    buscador.dispatchEvent(event);
+  }
+  // let event = new Event('change', {bubbles : true});
+  // selector.selectedIndex = 0;
+  // selector.dispatchEvent(event);
+}
+
 
 function mostrarArticulos(array) {
   cuerpoTabla.innerHTML = ''
@@ -142,4 +160,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     mostrarArticulos(arrayFiltro)
   })
+
+  let btnQuitarFiltro = document.getElementById('btn-quitar-filtro');
+  btnQuitarFiltro.addEventListener('click', () =>{
+    limpiarFIltros();
+  })
+  
 })
