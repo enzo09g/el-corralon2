@@ -64,8 +64,10 @@ $(document).ready(function () {
 
 
 function trasladarse(event){
-  let dataValue = event.target.getAttribute("data-value");
+  let dataValue = event.target.getAttribute("data-tipo");
+  let dataNombre = event.target.getAttribute("data-catNombre")
   console.log(dataValue)
+  localStorage.setItem('catNombre', dataNombre)
   localStorage.setItem('tipoNombre', dataValue);
   window.location = "productos-info.html";
 }
