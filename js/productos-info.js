@@ -83,7 +83,8 @@ function preFiltro() {
 }
 
 // Se puede mejorar
-function limpiarFIltros(){                      
+function limpiarFIltros(){  
+  localStorage.removeItem('tipoNombre')                    
   let buscador = document.getElementById('buscador');
   let selector = document.getElementById('selector-filtro');
   if(selector.selectedIndex != 0){
