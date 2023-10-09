@@ -1,0 +1,57 @@
+{
+    "titulo": "Extractores",
+    "objeto": [
+        {
+            "codigo": "5367",
+            "nombre": "EXTRACTOR EOLICO 200MM",
+            "codificacion": "Familia",
+            "clasificacion": "EXTRACTORES Y ACCESORIOS",
+            "listaPrecio": "CONTADO USD",
+            "moneda": "USD",
+            "precioUnitario": "191.33",
+            "unidad": "UNID",
+            "precioEditable": "NO",
+            "activo": "SI",
+            "publicado": "SI"
+        },
+        {
+            "codigo": "5369",
+            "nombre": "EXTRACTOR EOLICO 500MM",
+            "codificacion": "Familia",
+            "clasificacion": "EXTRACTORES Y ACCESORIOS",
+            "listaPrecio": "CONTADO USD",
+            "moneda": "USD",
+            "precioUnitario": "377.68",
+            "unidad": "UNID",
+            "precioEditable": "NO",
+            "activo": "SI",
+            "publicado": "SI"
+        },
+        {
+            "codigo": "6064",
+            "nombre": "EXTRACTOR EOLICO 600MM GALVANIZADO",
+            "codificacion": "Familia",
+            "clasificacion": "EXTRACTORES Y ACCESORIOS",
+            "listaPrecio": "CONTADO USD",
+            "moneda": "USD",
+            "precioUnitario": "364.66",
+            "unidad": "UNID",
+            "precioEditable": "NO",
+            "activo": "SI",
+            "publicado": "SI"
+        },
+        {
+            "codigo": "6065",
+            "nombre": "EXTRACTOR EOLICO 600MM TRANSPARENTE",
+            "codificacion": "Familia",
+            "clasificacion": "EXTRACTORES Y ACCESORIOS",
+            "listaPrecio": "CONTADO USD",
+            "moneda": "USD",
+            "precioUnitario": "357.25",
+            "unidad": "UNID",
+            "precioEditable": "NO",
+            "activo": "NO",
+            "publicado": "SI"
+        }
+    ]
+}
