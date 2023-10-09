@@ -548,34 +548,6 @@
             "tipo": "Oblongo"
         },
         {
-            "codigo": "6238",
-            "nombre": "B. CAÑO PERF. 30X15X1.6",
-            "codificacion": "Familia",
-            "clasificacion": "CAÑOS",
-            "listaPrecio": "CONTADO USD",
-            "moneda": "USD",
-            "precioUnitario": "15.66",
-            "unidad": "UNID",
-            "precioEditable": "NO",
-            "activo": "NO",
-            "publicado": "SI",
-            "tipo": "Perfil"
-        },
-        {
-            "codigo": "5173",
-            "nombre": "B. CAÑO PERF. 30X30X1.6",
-            "codificacion": "Familia",
-            "clasificacion": "CAÑOS",
-            "listaPrecio": "CONTADO USD",
-            "moneda": "USD",
-            "precioUnitario": "16.82",
-            "unidad": "UNID",
-            "precioEditable": "NO",
-            "activo": "NO",
-            "publicado": "SI",
-            "tipo": "Perfil"
-        },
-        {
             "codigo": "7006",
             "nombre": "B. CAÑO REC 200X100X3.00 (P/PEDIDO)",
             "codificacion": "Familia",

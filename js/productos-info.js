@@ -76,23 +76,23 @@ function preFiltro() {
   for (let i = 0; i < tipos.length; i++) {
     if (selectOpcion == tipos[i].toLowerCase()) {
       var event = new Event("change", { bubbles: true });
-      selector.selectedIndex = (i+1);
+      selector.selectedIndex = (i + 1);
       selector.dispatchEvent(event)
     }
   }
 }
 
 // Se puede mejorar
-function limpiarFIltros(){  
-  localStorage.removeItem('tipoNombre')                    
+function limpiarFIltros() {
+  localStorage.removeItem('tipoNombre')
   let buscador = document.getElementById('buscador');
   let selector = document.getElementById('selector-filtro');
-  if(selector.selectedIndex != 0){
+  if (selector.selectedIndex != 0) {
     traerInfo(jsonNombre())
   }
-  if(buscador.value != ""){
+  if (buscador.value != "") {
     console.log("hola")
-    let event = new Event('keyup', {bubbles: true});
+    let event = new Event('keyup', { bubbles: true });
     buscador.value = "";
     buscador.dispatchEvent(event);
   }
@@ -163,8 +163,8 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
   let btnQuitarFiltro = document.getElementById('btn-quitar-filtro');
-  btnQuitarFiltro.addEventListener('click', () =>{
+  btnQuitarFiltro.addEventListener('click', () => {
     limpiarFIltros();
   })
-  
+
 })
