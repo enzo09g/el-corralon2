@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     buscador.addEventListener('keyup', () => {
         buscar(buscador)
     });
+    loader();
 
 })
 
@@ -16,4 +17,9 @@ function buscar(buscador) {
             element.style.display = 'inline-block'
         }
     });
+}
+
+function loader(){
+    let contLoad = document.getElementById('contLoad');
+    contLoad.style = "display: none"
 }

@@ -1,0 +1,27 @@
+.contLoad{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: rgba(211, 211, 211, 0.555);
+}
+
+
+.loader{
+    border: 20px solid #EAF0F6;
+    border-radius: 50%;
+    border-top: 20px solid #FF7a59;
+    width: 200px;
+    height: 200px;
+    animation: spinner 4s linear infinite;
+}
+
+@keyframes spinner{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
