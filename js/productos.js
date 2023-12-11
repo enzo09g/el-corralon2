@@ -7,8 +7,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 })
 
+function loader(){
+    let contLoad = document.getElementById('contLoad');
+    contLoad.style = "display: none"
+}
+
 function buscar(buscador) {
-    let tarjetas = Array.from(document.getElementsByClassName('card'));
+    let tarjetas = Array.from(document.getElementsByClassName('tarjeta'));
 
     tarjetas.forEach(element => {
         if (!(element.textContent.toLowerCase().includes(buscador.value.toLowerCase()))) {
@@ -19,7 +24,3 @@ function buscar(buscador) {
     });
 }
 
-function loader(){
-    let contLoad = document.getElementById('contLoad');
-    contLoad.style = "display: none"
-}

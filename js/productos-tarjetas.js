@@ -1,7 +1,7 @@
 $(document).ready(function () {
   var zindex = 10;
 
-  $("div.card").click(function (e) {
+  $("div.tarjeta").click(function (e) {
     e.preventDefault();
 
     var isShowing = false;
@@ -10,17 +10,17 @@ $(document).ready(function () {
       isShowing = true
     }
 
-    if ($("div.cards").hasClass("showing")) {
-      // a card is already in view
-      $("div.card.show")
+    if ($("div.tarjetas").hasClass("showing")) {
+      // a tarjeta is already in view
+      $("div.tarjeta.show")
         .removeClass("show");
 
       if (isShowing) {
-        // this card was showing - reset the grid
-        $("div.cards")
+        // this tarjeta was showing - reset the grid
+        $("div.tarjetas")
           .removeClass("showing");
       } else {
-        // this card isn't showing - get in with it
+        // this tarjeta isn't showing - get in with it
         $(this)
           .css({ zIndex: zindex })
           .addClass("show");
@@ -30,8 +30,8 @@ $(document).ready(function () {
       zindex++;
 
     } else {
-      // no cards in view
-      $("div.cards")
+      // no tarjetas in view
+      $("div.tarjetas")
         .addClass("showing");
       $(this)
         .css({ zIndex: zindex })
@@ -43,8 +43,8 @@ $(document).ready(function () {
 
   $("a.ir").click(function (e) {
     e.stopPropagation(); // Evita que el evento de tarjeta se active al hacer clic en el botón "Read more"
-    var url = $(this).closest(".card").data("url"); // Obtiene la URL de la tarjeta actual
-    var catNombre = $(this).closest(".card").data("catnombre"); // Obtiene el valor de data-catNombre
+    var url = $(this).closest(".tarjeta").data("url"); // Obtiene la URL de la tarjeta actual
+    var catNombre = $(this).closest(".tarjeta").data("catnombre"); // Obtiene el valor de data-catNombre
     localStorage.setItem('tipoNombre', "none");
 
     if (catNombre) {
