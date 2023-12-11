@@ -9,26 +9,25 @@ let tipos = [];
 // Esta variable tendra la info del fetch traerInfo()
 let arrayProductos;
 
-function traerInfo(json) {
-  fetch(json)
-    .then(Response => Response.json())
-    .then(data => {
-      console.log(data.titulo);
-      cambiarTitulo(data);
-      mostrarArticulos(data.objeto)
-      actualizarTipos(data.objeto)
-      actualizarOpciones()
-      fetchData(jsonNombre())
-      preFiltro()
-    })
+async function traerInfo(json) {
+
+  const response = await fetch(json)
+  const data = await response.json();
+  console.log(data.titulo);
+  cambiarTitulo(data);
+  mostrarArticulos(data.objeto)
+  actualizarTipos(data.objeto)
+  actualizarOpciones()
+  fetchData(jsonNombre())
+  preFiltro()
 }
 
-function fetchData(json) {   //Actualiza arrayProductos
-  fetch(json)
-    .then(response => response.json())
-    .then(data => {
-      arrayProductos = data;
-    })
+async function fetchData(json) {   //Actualiza arrayProductos
+
+  const response = await fetch(json)
+  const data = await response.json();
+  arrayProductos = data;
+
 }
 
 function jsonNombre() {   // Retorna el nombre del JSON del local storage
