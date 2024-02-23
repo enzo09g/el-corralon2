@@ -13,7 +13,6 @@ async function traerInfo(json) {
 
   const response = await fetch(json)
   const data = await response.json();
-  console.log(data.titulo);
   cambiarTitulo(data);
   mostrarArticulos(data.objeto)
   actualizarTipos(data.objeto)
@@ -109,20 +108,22 @@ function mostrarArticulos(array) {
           <td class="tabla-nombre" id="${index}" data-label="Nombre">${element.nombre}</td>
           <td data-label="Cantidad">
             <div>
-              <input placeholder="Cantidad..." type="number" class="form-control form-control-sm" id="${index}" required>
+              <input type="number" placeholder="Cantidad..." class="form-control form-control-sm" id="${index}" required>
               <div class="invalid-feedback">
               Ingrese una cantidad.
               </div>
             </div></td>
 
-          <td data-label="Lista de presupuesto"><i class="bi bi-cart3 carrito-vacio" id="${index}" style="font-size: 1.3rem"></i></td>
+          <td data-label="Lista de presupuesto"><i class="bi bi-cart3 carrito-vacio" id="${index}" style="font-size: 1.3rem"></i><i id="${index}" class="bi bi-trash mx-5 borrar d-none" style="font-size: 1.3rem"></i></td>
         </tr>
         `
   });
 
 
-  const arrayCarrito = Array.from(document.getElementsByTagName('i'));
-  añadirEventoCarrito(arrayCarrito)
+  const arrayCarrito = Array.from(document.getElementsByClassName('carrito-vacio'));
+  const botonBorrar = Array.from(document.getElementsByClassName('borrar'));
+  añadirEventoCarrito(arrayCarrito);
+  añadirEventoBorrar(botonBorrar);
 }
 
 function añadirEventoCarrito(array) {
@@ -131,6 +132,7 @@ function añadirEventoCarrito(array) {
       let indexCantidades = parseInt(element.id) + 1
       const arrayNombres = Array.from(document.getElementsByTagName('td'))
       const arrayCantidades = Array.from(document.getElementsByTagName('input'));
+      const botonBorrar = Array.from(document.getElementsByClassName('borrar'))[element.id];
 
       let nombre = arrayNombres.find(elemento => elemento.id == element.id).innerHTML
       let inputCantidad = arrayCantidades[indexCantidades]
@@ -139,27 +141,84 @@ function añadirEventoCarrito(array) {
       if (!cantidad) {
         inputCantidad.classList.contains("is-valid") ? inputCantidad.classList.remove("is-valid") : inputCantidad
         inputCantidad.classList.add('is-invalid')
-        element.style="font-size: 1.3rem"
+        element.style = "font-size: 1.3rem"
+        botonBorrar.classList.contains('d-none') ? botonBorrar : botonBorrar.classList.add('d-none')
+        setTimeout(() => {
+          inputCantidad.classList.contains('is-invalid') ? inputCantidad.classList.remove('is-invalid') : inputCantidad
+        }, 8000);
       } else {
         inputCantidad.classList.contains("is-invalid") ? inputCantidad.classList.remove("is-invalid") : inputCantidad
         inputCantidad.classList.add("is-valid")
-        element.style = "color: cornflowerblue; font-size: 1.2rem"  
+        element.style = "color: cornflowerblue; font-size: 1.2rem"
+        botonBorrar.classList.remove('d-none')
         let producto = {
           "nombre": nombre,
           "cantidad": cantidad
         }
         enviarAlCarrito(producto)
+        mostrarCarritoDelLocal()
       }
 
     })
   });
 }
 
-function enviarAlCarrito(producto) {
-  let array = [];
-  array.push(producto)
-  console.log(array)
+function añadirEventoBorrar(array) {
+  array.forEach(element => {
+    element.addEventListener('click', () => {
+      let indexCantidades = parseInt(element.id) + 1
+      const arrayNombres = Array.from(document.getElementsByTagName('td'))
+      const arrayCantidades = Array.from(document.getElementsByTagName('input'));
+      const arrayCarrito = Array.from(document.getElementsByClassName('carrito-vacio'))
+      arrayCarrito[element.id].style = "font-size: 1.3rem"
+      let inputCantidad = arrayCantidades[indexCantidades]
+      inputCantidad.value = ""
+      let nombre = arrayNombres.find(elemento => elemento.id == element.id).innerHTML
+
+      inputCantidad.classList.contains('is-valid') ? inputCantidad.classList.remove('is-valid') : inputCantidad
+      inputCantidad.classList.contains('is-invalid') ? inputCantidad.classList.remove('is-invalid') : inputCantidad
+      element.classList.add('d-none')
+
+      borrarDelCarrito(nombre)
+      mostrarCarritoDelLocal()
+    })
+  });
 }
+
+function enviarAlCarrito(producto) {
+  try {
+    let arrayCarrito = JSON.parse(localStorage.getItem('carrito')) || []
+    let elementoRepetido = arrayCarrito.find(element => element.nombre == producto.nombre);
+    let indice = arrayCarrito.indexOf(elementoRepetido);
+    if (elementoRepetido) {
+      arrayCarrito.splice(indice, 1, producto)
+      actualizarCarrito(arrayCarrito)
+    } else {
+      arrayCarrito.push(producto)
+      actualizarCarrito(arrayCarrito)
+    }
+  } catch (e) {
+    localStorage.removeItem('carrito')
+  }
+}
+
+function actualizarCarrito(array) {
+  let carrito = JSON.stringify(array);
+  localStorage.setItem('carrito', carrito)
+}
+
+function borrarDelCarrito(nombre) {
+  let arrayCarrito = JSON.parse(localStorage.getItem('carrito'));
+  let index = arrayCarrito.findIndex(element => element.nombre == nombre);
+  arrayCarrito.splice(index, 1)
+  actualizarCarrito(arrayCarrito)
+}
+
+function mostrarCarritoDelLocal() {
+  carrito = JSON.parse(localStorage.getItem('carrito'));
+  console.log(carrito);
+}
+
 
 function cambiarTitulo(array) {
   let titulo = document.getElementById('titulo');
@@ -169,7 +228,6 @@ function cambiarTitulo(array) {
 function buscar() {
   let buscador = document.getElementById('buscador');
   let productos = Array.from(document.getElementsByClassName('fila-producto'));
-  console.log(productos)
   productos.forEach(element => {
     if (!(element.outerHTML.toLowerCase().includes(buscador.value.toLowerCase()))) {
       element.style.display = "none";
