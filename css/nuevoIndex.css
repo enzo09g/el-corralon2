@@ -1,0 +1,43 @@
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    background: url("../img/index/291386452_1205138850330697_8645032790966375441_n.jpg");
+}
+
+.redondo {
+    border-radius: 25px;
+}
+
+.hola {
+    height: 300px;
+    width: 300px;
+}
+
+.logoWhatsapp {
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+}
+
+.imgwhatsapp {
+    max-width: 60px;
+}
+
+li{
+    list-style-type: none;
+}
+
+.nav-fixed{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
