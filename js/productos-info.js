@@ -107,7 +107,14 @@ function mostrarArticulos(array) {
     cuerpoTabla.innerHTML += `
         <tr data-descripcion="${element.tipo}" class="fila-producto">
           <td class="tabla-nombre" id="${index}" data-label="Nombre">${element.nombre}</td>
-          <td data-label="Cantidad"><input id="${index} type="number" class="form-control form-control-sm" placeholder="Cantidad"></td>
+          <td data-label="Cantidad">
+            <div>
+              <input type="number" class="form-control form-control-sm" id="${index}" required>
+              <div class="invalid-feedback">
+              Ingrese una cantidad.
+              </div>
+            </div></td>
+
           <td data-label="Lista de presupuesto"><i class="bi bi-cart3 carrito-vacio" id="${index}" style="font-size: 1.3rem"></i></td>
         </tr>
         `
@@ -121,17 +128,28 @@ function mostrarArticulos(array) {
 function añadirEventoCarrito(array) {
   array.forEach(element => {
     element.addEventListener('click', () => {
-      element.style = "color: cornflowerblue; font-size: 1.2rem"
       let indexCantidades = parseInt(element.id) + 1
       const arrayNombres = Array.from(document.getElementsByTagName('td'))
       const arrayCantidades = Array.from(document.getElementsByTagName('input'));
-      let nombre = arrayNombres.find(elemento => elemento.id == element.id).innerHTML
-      let producto = {
-        "nombre": nombre,
-        "cantidad": arrayCantidades[indexCantidades].value
-      }
 
-      enviarAlCarrito(producto)
+      let nombre = arrayNombres.find(elemento => elemento.id == element.id).innerHTML
+      let inputCantidad = arrayCantidades[indexCantidades]
+      let cantidad = inputCantidad.value
+
+      if (!cantidad) {
+        inputCantidad.classList.contains("is-valid") ? inputCantidad.classList.remove("is-valid") : inputCantidad
+        inputCantidad.classList.add('is-invalid')
+        element.style="font-size: 1.3rem"
+      } else {
+        inputCantidad.classList.contains("is-invalid") ? inputCantidad.classList.remove("is-invalid") : inputCantidad
+        inputCantidad.classList.add("is-valid")
+        element.style = "color: cornflowerblue; font-size: 1.2rem"  
+        let producto = {
+          "nombre": nombre,
+          "cantidad": cantidad
+        }
+        enviarAlCarrito(producto)
+      }
 
     })
   });
