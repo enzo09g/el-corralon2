@@ -1,3 +1,13 @@
 .carrito-vacio:hover{
     cursor: pointer;
 }
+
+
+.borrar-display{
+    display: block;
+}
+
+.borrar:hover{
+    cursor: pointer;
+    color: red;
+}
