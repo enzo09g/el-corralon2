@@ -103,15 +103,44 @@ function limpiarFIltros() {
 
 function mostrarArticulos(array) {
   cuerpoTabla.innerHTML = ''
-  array.forEach(element => {
+  array.forEach((element, index) => {
     cuerpoTabla.innerHTML += `
         <tr data-descripcion="${element.tipo}" class="fila-producto">
-          <td class="tabla-nombre" data-label="Nombre">${element.nombre}</td>
-          <td data-label="Precio">$ ${parseInt((element.precioUnitario * 38))}</td>
-          <td data-label="En Stock">${element.publicado}</td>
+          <td class="tabla-nombre" id="${index}" data-label="Nombre">${element.nombre}</td>
+          <td data-label="Cantidad"><input id="${index} type="number" class="form-control form-control-sm" placeholder="Cantidad"></td>
+          <td data-label="Lista de presupuesto"><i class="bi bi-cart3 carrito-vacio" id="${index}" style="font-size: 1.3rem"></i></td>
         </tr>
         `
   });
+
+
+  const arrayCarrito = Array.from(document.getElementsByTagName('i'));
+  añadirEventoCarrito(arrayCarrito)
+}
+
+function añadirEventoCarrito(array) {
+  array.forEach(element => {
+    element.addEventListener('click', () => {
+      element.style = "color: cornflowerblue; font-size: 1.2rem"
+      let indexCantidades = parseInt(element.id) + 1
+      const arrayNombres = Array.from(document.getElementsByTagName('td'))
+      const arrayCantidades = Array.from(document.getElementsByTagName('input'));
+      let nombre = arrayNombres.find(elemento => elemento.id == element.id).innerHTML
+      let producto = {
+        "nombre": nombre,
+        "cantidad": arrayCantidades[indexCantidades].value
+      }
+
+      enviarAlCarrito(producto)
+
+    })
+  });
+}
+
+function enviarAlCarrito(producto) {
+  let array = [];
+  array.push(producto)
+  console.log(array)
 }
 
 function cambiarTitulo(array) {
