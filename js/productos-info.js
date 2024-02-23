@@ -109,7 +109,7 @@ function mostrarArticulos(array) {
           <td class="tabla-nombre" id="${index}" data-label="Nombre">${element.nombre}</td>
           <td data-label="Cantidad">
             <div>
-              <input type="number" class="form-control form-control-sm" id="${index}" required>
+              <input placeholder="Cantidad..." type="number" class="form-control form-control-sm" id="${index}" required>
               <div class="invalid-feedback">
               Ingrese una cantidad.
               </div>
