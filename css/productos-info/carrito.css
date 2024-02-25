@@ -11,3 +11,13 @@
     cursor: pointer;
     color: red;
 }
+
+.logoWhatsapp {
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+}
+
+.imgwhatsapp {
+    max-width: 60px;
+}

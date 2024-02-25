@@ -2,6 +2,8 @@
 const contenedorTitulo = document.getElementById('contenedorTitulo');
 const contenedorTabla = document.getElementById('contenedor');
 const cuerpoTabla = document.getElementById('cuerpoTabla');
+const carritoDiv = document.querySelector('.logoWhatsapp')
+let carritoGlobal = JSON.parse(localStorage.getItem('carrito')) || []
 
 // Declarar un arreglo vacío para almacenar tipos de productos
 let tipos = [];
@@ -99,25 +101,55 @@ function limpiarFIltros() {
   // selector.dispatchEvent(event);
 }
 
+function mostrarCarrito() {
+  console.log("ME ejecute")
+  if (carritoGlobal.length >= 1) {
+    carritoDiv.classList.contains('d-none') ? carritoDiv.classList.remove('d-none') : carritoDiv
+  } else {
+    carritoDiv.classList.contains('d-none') ? carritoDiv : carritoDiv.classList.add('d-none')
+  }
+}
 
 function mostrarArticulos(array) {
+  mostrarCarrito()
   cuerpoTabla.innerHTML = ''
   array.forEach((element, index) => {
-    cuerpoTabla.innerHTML += `
-        <tr data-descripcion="${element.tipo}" class="fila-producto">
-          <td class="tabla-nombre" id="${index}" data-label="Nombre">${element.nombre}</td>
-          <td data-label="Cantidad">
-            <div>
-              <input type="number" placeholder="Cantidad..." class="form-control form-control-sm" id="${index}" required>
-              <div class="invalid-feedback">
-              Ingrese una cantidad.
-              </div>
-            </div></td>
+    if (carritoGlobal.some(item => item.nombre == element.nombre)) {
+      let elementoEnCarrito = carritoGlobal.find(elementoCarrito => elementoCarrito.nombre == element.nombre)
 
-          <td data-label="Lista de presupuesto"><i class="bi bi-cart3 carrito-vacio" id="${index}" style="font-size: 1.3rem"></i><i id="${index}" class="bi bi-trash mx-5 borrar d-none" style="font-size: 1.3rem"></i></td>
-        </tr>
-        `
+      cuerpoTabla.innerHTML += `
+      <tr data-descripcion="${element.tipo}" class="fila-producto">
+        <td class="tabla-nombre" id="${index}" data-label="Nombre">${element.nombre}</td>
+        <td data-label="Cantidad">
+          <div>
+            <input type="number" placeholder="Cantidad..." class="form-control form-control-sm is-valid" id="${index}" value="${elementoEnCarrito.cantidad}" required>
+            <div class="invalid-feedback">
+            Ingrese una cantidad.
+            </div>
+          </div></td>
+
+        <td data-label="Lista de presupuesto"><i class="bi bi-cart3 carrito-vacio" id="${index}" style="color: cornflowerblue; font-size: 1.2rem"></i><i id="${index}" class="bi bi-trash mx-5 borrar" style="font-size: 1.3rem"></i></td>
+      </tr>
+      `
+
+    } else {
+      cuerpoTabla.innerHTML += `
+          <tr data-descripcion="${element.tipo}" class="fila-producto">
+            <td class="tabla-nombre" id="${index}" data-label="Nombre">${element.nombre}</td>
+            <td data-label="Cantidad">
+              <div>
+                <input type="number" placeholder="Cantidad..." class="form-control form-control-sm" id="${index}" required">
+                <div class="invalid-feedback">
+                Ingrese una cantidad.
+                </div>
+              </div></td>
+  
+            <td data-label="Lista de presupuesto"><i class="bi bi-cart3 carrito-vacio" id="${index}" style="font-size: 1.3rem"></i><i id="${index}" class="bi bi-trash mx-5 borrar d-none" style="font-size: 1.3rem"></i></td>
+          </tr>
+          `
+    }
   });
+
 
 
   const arrayCarrito = Array.from(document.getElementsByClassName('carrito-vacio'));
@@ -155,7 +187,8 @@ function añadirEventoCarrito(array) {
           "nombre": nombre,
           "cantidad": cantidad
         }
-        enviarAlCarrito(producto)
+        let carritoActualizado = enviarAlCarrito(producto)
+        mostrarCarrito()
         mostrarCarritoDelLocal()
       }
 
@@ -180,6 +213,7 @@ function añadirEventoBorrar(array) {
       element.classList.add('d-none')
 
       borrarDelCarrito(nombre)
+      mostrarCarrito()
       mostrarCarritoDelLocal()
     })
   });
@@ -187,15 +221,16 @@ function añadirEventoBorrar(array) {
 
 function enviarAlCarrito(producto) {
   try {
-    let arrayCarrito = JSON.parse(localStorage.getItem('carrito')) || []
-    let elementoRepetido = arrayCarrito.find(element => element.nombre == producto.nombre);
-    let indice = arrayCarrito.indexOf(elementoRepetido);
+    let elementoRepetido = carritoGlobal.find(element => element.nombre == producto.nombre);
+    let indice = carritoGlobal.indexOf(elementoRepetido);
     if (elementoRepetido) {
-      arrayCarrito.splice(indice, 1, producto)
-      actualizarCarrito(arrayCarrito)
+      carritoGlobal.splice(indice, 1, producto)
+      modificarPrespuesto()
+      actualizarCarrito(carritoGlobal)
     } else {
-      arrayCarrito.push(producto)
-      actualizarCarrito(arrayCarrito)
+      carritoGlobal.push(producto)
+      modificarPrespuesto()
+      actualizarCarrito(carritoGlobal)
     }
   } catch (e) {
     localStorage.removeItem('carrito')
@@ -208,10 +243,17 @@ function actualizarCarrito(array) {
 }
 
 function borrarDelCarrito(nombre) {
-  let arrayCarrito = JSON.parse(localStorage.getItem('carrito'));
-  let index = arrayCarrito.findIndex(element => element.nombre == nombre);
-  arrayCarrito.splice(index, 1)
-  actualizarCarrito(arrayCarrito)
+  let index = carritoGlobal.findIndex(element => element.nombre == nombre);
+  carritoGlobal.splice(index, 1)
+  modificarPrespuesto()
+  actualizarCarrito(carritoGlobal)
+}
+
+function modificarPrespuesto() {
+  let mensaje = carritoGlobal.map(objeto => `${objeto.cantidad} ${objeto.nombre} `).join('; ');
+  let mensajeCodificado = encodeURIComponent(mensaje);
+  let link = document.getElementById('link')
+  link.href = `https://wa.me/59892731026?text=${mensajeCodificado}`
 }
 
 function mostrarCarritoDelLocal() {
@@ -240,6 +282,7 @@ function buscar() {
 
 
 document.addEventListener('DOMContentLoaded', () => {
+  modificarPrespuesto()
 
   fetchData(jsonNombre());    // Se usa aqui fetchData para actualizar arrayDatos, ya que el fetch de fetchData dentro de traerInfo no llega a completarse correctamente(dentro de otras funciones en general)
   traerInfo(jsonNombre());
