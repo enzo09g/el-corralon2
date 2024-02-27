@@ -128,7 +128,7 @@ function mostrarArticulos(array) {
             </div>
           </div></td>
 
-        <td data-label="Lista de presupuesto"><i class="bi bi-cart3 carrito-vacio" id="${index}" style="color: cornflowerblue; font-size: 1.2rem"></i><i id="${index}" class="bi bi-trash mx-5 borrar" style="font-size: 1.3rem"></i></td>
+        <td data-label="Lista de presupuesto"><i class="bi bi-cart3 carrito-vacio" id="${index}" style="color: cornflowerblue; font-size: 1.3rem"></i><i id="${index}" class="bi bi-trash mx-5 borrar" style="font-size: 1.3rem"></i></td>
       </tr>
       `
 
@@ -181,7 +181,7 @@ function añadirEventoCarrito(array) {
       } else {
         inputCantidad.classList.contains("is-invalid") ? inputCantidad.classList.remove("is-invalid") : inputCantidad
         inputCantidad.classList.add("is-valid")
-        element.style = "color: cornflowerblue; font-size: 1.2rem"
+        element.style = "color: cornflowerblue; font-size: 1.3rem"
         botonBorrar.classList.remove('d-none')
         let producto = {
           "nombre": nombre,
