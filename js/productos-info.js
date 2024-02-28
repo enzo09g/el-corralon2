@@ -121,13 +121,13 @@ function mostrarArticulos(array) {
         <td class="tabla-nombre" id="${index}" data-label="Nombre">${element.nombre}</td>
         <td data-label="Cantidad">
           <div>
-            <input type="number" placeholder="Cantidad..." class="form-control form-control-sm is-valid" id="${index}" value="${elementoEnCarrito.cantidad}" required>
+            <input type="number" data-btnnombre="${element.nombre}" placeholder="Cantidad..." class="form-control form-control-sm is-valid" id="${index}" value="${elementoEnCarrito.cantidad}" required>
             <div class="invalid-feedback">
             Ingrese una cantidad.
             </div>
           </div></td>
 
-        <td data-label="Lista de presupuesto"><i class="bi bi-cart3 carrito-vacio" id="${index}" style="color: cornflowerblue; font-size: 1.3rem"></i><i id="${index}" class="bi bi-trash mx-5 borrar" style="font-size: 1.3rem"></i></td>
+        <td data-label="Lista de presupuesto"><i class="bi bi-cart3 carrito-vacio" id="${index}" data-btnnombre="${element.nombre}" style="color: cornflowerblue; font-size: 1.3rem"></i><i data-btnnombre="${element.nombre}" id="${index}" class="bi bi-trash mx-5 borrar" style="font-size: 1.3rem"></i></td>
       </tr>
       `
 
@@ -137,13 +137,13 @@ function mostrarArticulos(array) {
             <td class="tabla-nombre" id="${index}" data-label="Nombre">${element.nombre}</td>
             <td data-label="Cantidad">
               <div>
-                <input type="number" placeholder="Cantidad..." class="form-control form-control-sm" id="${index}" required">
+                <input type="number" data-btnnombre="${element.nombre}" placeholder="Cantidad..." class="form-control form-control-sm" id="${index}" required">
                 <div class="invalid-feedback">
                 Ingrese una cantidad.
                 </div>
               </div></td>
   
-            <td data-label="Lista de presupuesto"><i class="bi bi-cart3 carrito-vacio" id="${index}" style="font-size: 1.3rem"></i><i id="${index}" class="bi bi-trash mx-5 borrar d-none" style="font-size: 1.3rem"></i></td>
+            <td data-label="Lista de presupuesto"><i class="bi bi-cart3 carrito-vacio" id="${index}" data-btnnombre="${element.nombre}" style="font-size: 1.3rem"></i><i id="${index}" data-btnnombre="${element.nombre}" class="bi bi-trash mx-5 borrar d-none" style="font-size: 1.3rem"></i></td>
           </tr>
           `
     }
@@ -187,6 +187,7 @@ function añadirEventoCarrito(array) {
           "cantidad": cantidad
         }
         enviarAlCarrito(producto)
+        enviarAlModal()
         mostrarLogo()
 
       }
@@ -212,6 +213,7 @@ function añadirEventoBorrar(array) {
       element.classList.add('d-none')
 
       borrarDelCarrito(nombre)
+      enviarAlModal()
       mostrarLogo()
 
     })
@@ -250,12 +252,6 @@ function borrarDelCarrito(nombre) {
     actualizarCarrito(carritoGlobal)
 }
 
-function vaciarContenedor() {
-  const contenedorModal = document.getElementById('contenedor-modal');
-  while (contenedorModal.firstChild) {
-    contenedorModal.removeChild();
-  }
-}
 
 async function enviarAlModal() {
   const contenedorModal = document.getElementById('contenedor-modal');
@@ -277,8 +273,26 @@ function agregarEventoEliminar(array) {
       let nombre = padre.firstChild.dataset.nombre
       
       borrarDelCarrito(nombre)
+      enviarAlModal()
+      quitarBtnEliminar(nombre)
+      mostrarLogo()
     })
   });
+}
+
+function quitarBtnEliminar(nombre){
+  const array = Array.from(document.getElementsByClassName('borrar'));
+  const arrayCarrito = Array.from(document.getElementsByClassName('carrito-vacio'));
+  const arrayInput = Array.from(document.getElementsByClassName('is-valid'))
+  console.log(arrayInput)
+  let btnBorrar = array.find(element => element.dataset.btnnombre == nombre)
+  let btnComprar = arrayCarrito.find(element => element.dataset.btnnombre == nombre)
+  let input = arrayInput.find(element => element.dataset.btnnombre == nombre)
+  console.log(input)
+  btnBorrar.classList.add('d-none')
+  btnComprar.style = "font-size: 1.3rem"
+  input.value = "";
+  input.classList.remove('is-valid');
 }
 
 function getElementosIModal() {
