@@ -70,11 +70,11 @@ function actualizarOpciones() {
   }
 }
 
-const obtenerSelector = () =>{
+const obtenerSelector = () => {
   return new Promise((resolve) => {
     let interval = setInterval(() => {
       const selector = document.getElementById('selector-filtro')
-      if(selector.options.length == 7){
+      if (selector.options.length == 7) {
         clearInterval(interval)
         resolve(selector)
       }
