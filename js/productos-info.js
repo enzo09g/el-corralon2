@@ -126,7 +126,6 @@ function añadirEventoBtnModal() {
 
 function mostrarArticulos(array) {
   mostrarLogo()
-  enviarAlModal() // moverlo a cuando se hace click en el boton del carrito
   cuerpoTabla.innerHTML = ''
   array.forEach((element, index) => {
     if (carritoGlobal.some(item => item.nombre == element.nombre)) {
@@ -188,12 +187,11 @@ function añadirEventoCarrito(array) {
       if (!cantidad || cantidad < 1) {
         let elementoRepetido = carritoGlobal.find(element => element.nombre == nombre)
         let indice = carritoGlobal.indexOf(elementoRepetido);
-        console.log(elementoRepetido)
         if (elementoRepetido) {
           carritoGlobal.splice(indice, 1)
           modificarPrespuesto()
           actualizarCarrito(carritoGlobal)
-          enviarAlModal()
+          enviarAlModal("añadirEventoCarrito")
           mostrarLogo()
         }
         inputCantidad.classList.contains("is-valid") ? inputCantidad.classList.remove("is-valid") : inputCantidad
@@ -213,7 +211,7 @@ function añadirEventoCarrito(array) {
           "cantidad": cantidad
         }
         enviarAlCarrito(producto)
-        enviarAlModal()
+        enviarAlModal("añadirEventoCarrito")
         mostrarLogo()
 
       }
@@ -239,7 +237,7 @@ function añadirEventoBorrar(array) {
       element.classList.add('d-none')
 
       borrarDelCarrito(nombre)
-      enviarAlModal()
+      enviarAlModal("añadirEventoBorrar")
       mostrarLogo()
 
     })
@@ -270,7 +268,6 @@ function actualizarCarrito(array) {
 }
 
 function borrarDelCarrito(nombre) {
-  console.log(nombre)
   let index = carritoGlobal.findIndex(element => element.nombre == nombre);
   console.log(index)
   carritoGlobal.splice(index, 1)
@@ -278,10 +275,17 @@ function borrarDelCarrito(nombre) {
   actualizarCarrito(carritoGlobal)
 }
 
+const vaciarContenedor = (contenedor) => {
+  while (contenedor.firstChild) {
+    let hijo = contenedor.firstChild;
+    contenedor.removeChild(hijo)
+  }
+}
 
 async function enviarAlModal() {
   const contenedorModal = document.getElementById('contenedor-modal');
-  contenedorModal.innerHTML = "";
+  vaciarContenedor(contenedorModal);
+  // contenedorModal.innerHTML = "";
 
   carritoGlobal.forEach((element, index) => {
     const productoModal = crearProductoModal(element, index);
@@ -331,7 +335,6 @@ function quitarBtnEliminar(nombre) {
   const array = Array.from(document.getElementsByClassName('borrar'));
   const arrayCarrito = Array.from(document.getElementsByClassName('carrito-vacio'));
   const arrayInput = Array.from(document.getElementsByClassName('is-valid'))
-  console.log(arrayInput)
   let btnBorrar = array.find(element => element.dataset.btnnombre == nombre)
   let btnComprar = arrayCarrito.find(element => element.dataset.btnnombre == nombre)
   let input = arrayInput.find(element => element.dataset.btnnombre == nombre)
@@ -415,6 +418,7 @@ document.addEventListener('DOMContentLoaded', () => {
   añadirEventoBtnModal()
   fetchData(jsonNombre());    // Se usa aqui fetchData para actualizar arrayDatos, ya que el fetch de fetchData dentro de traerInfo no llega a completarse correctamente(dentro de otras funciones en general)
   traerInfo(jsonNombre());
+  enviarAlModal()
   let buscador = document.getElementById('buscador');
   let selector = document.getElementById('selector');
 
