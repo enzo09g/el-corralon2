@@ -32,6 +32,11 @@
     color: blue;
 }
 
+.carrito-con-productos{
+    font-size: 21px;
+    color: red;
+}
+
 .carrito-modal-titulo {
     padding: .625em;
     text-align: center;

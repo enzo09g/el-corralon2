@@ -4,6 +4,7 @@ const contenedorTabla = document.getElementById('contenedor');
 const cuerpoTabla = document.getElementById('cuerpoTabla');
 const carritoDiv = document.querySelector('.logoWhatsapp')
 let carritoGlobal = JSON.parse(localStorage.getItem('carrito')) || []
+let linkGlobal;
 
 // Declarar un arreglo vacío para almacenar tipos de productos
 let tipos = [];
@@ -101,11 +102,26 @@ function limpiarFIltros() {
 }
 
 function mostrarLogo() {
+  const btnWppModal = document.getElementById('wpButton');
+  const menuCarrito = document.querySelector('.carrito-menu');
   if (carritoGlobal.length >= 1) {
+    menuCarrito.classList.add('carrito-con-productos');
+    btnWppModal.removeAttribute('disabled')
+
     carritoDiv.classList.contains('d-none') ? carritoDiv.classList.remove('d-none') : carritoDiv
   } else {
+    menuCarrito.classList.remove('carrito-con-productos');
     carritoDiv.classList.contains('d-none') ? carritoDiv : carritoDiv.classList.add('d-none')
+    btnWppModal.setAttribute('disabled', "")
   }
+}
+
+function añadirEventoBtnModal() {
+  const btnWppModal = document.getElementById('wpButton');
+  btnWppModal.addEventListener('click', () => {
+    // window.location.href = linkGlobal
+    window.open(linkGlobal, '_blank');
+  })
 }
 
 function mostrarArticulos(array) {
@@ -121,7 +137,7 @@ function mostrarArticulos(array) {
         <td class="tabla-nombre" id="${index}" data-label="Nombre">${element.nombre}</td>
         <td data-label="Cantidad">
           <div>
-            <input type="number" data-btnnombre="${element.nombre}" placeholder="Cantidad..." class="form-control form-control-sm is-valid" id="${index}" value="${elementoEnCarrito.cantidad}" required>
+            <input min="1" type="number" data-btnnombre="${element.nombre}" placeholder="Cantidad..." class="form-control form-control-sm is-valid" id="${index}" value="${elementoEnCarrito.cantidad}" required>
             <div class="invalid-feedback">
             Ingrese una cantidad.
             </div>
@@ -137,7 +153,7 @@ function mostrarArticulos(array) {
             <td class="tabla-nombre" id="${index}" data-label="Nombre">${element.nombre}</td>
             <td data-label="Cantidad">
               <div>
-                <input type="number" data-btnnombre="${element.nombre}" placeholder="Cantidad..." class="form-control form-control-sm" id="${index}" required">
+                <input min="1" type="number" data-btnnombre="${element.nombre}" placeholder="Cantidad..." class="form-control form-control-sm" id="${index}" required">
                 <div class="invalid-feedback">
                 Ingrese una cantidad.
                 </div>
@@ -169,7 +185,17 @@ function añadirEventoCarrito(array) {
       let inputCantidad = arrayCantidades[indexCantidades]
       let cantidad = inputCantidad.value
 
-      if (!cantidad) {
+      if (!cantidad || cantidad < 1) {
+        let elementoRepetido = carritoGlobal.find(element => element.nombre == nombre)
+        let indice = carritoGlobal.indexOf(elementoRepetido);
+        console.log(elementoRepetido)
+        if (elementoRepetido) {
+          carritoGlobal.splice(indice, 1)
+          modificarPrespuesto()
+          actualizarCarrito(carritoGlobal)
+          enviarAlModal()
+          mostrarLogo()
+        }
         inputCantidad.classList.contains("is-valid") ? inputCantidad.classList.remove("is-valid") : inputCantidad
         inputCantidad.classList.add('is-invalid')
         element.style = "font-size: 1.3rem"
@@ -245,11 +271,11 @@ function actualizarCarrito(array) {
 
 function borrarDelCarrito(nombre) {
   console.log(nombre)
-    let index = carritoGlobal.findIndex(element => element.nombre == nombre);
-    console.log(index)
-    carritoGlobal.splice(index, 1)
-    modificarPrespuesto()
-    actualizarCarrito(carritoGlobal)
+  let index = carritoGlobal.findIndex(element => element.nombre == nombre);
+  console.log(index)
+  carritoGlobal.splice(index, 1)
+  modificarPrespuesto()
+  actualizarCarrito(carritoGlobal)
 }
 
 
@@ -264,6 +290,7 @@ async function enviarAlModal() {
 
   const elementosI = await getElementosIModal();
   agregarEventoEliminar(elementosI);
+  agregarEventoInput()
 }
 
 function agregarEventoEliminar(array) {
@@ -271,7 +298,7 @@ function agregarEventoEliminar(array) {
     element.addEventListener('click', (event) => {
       let padre = element.parentNode
       let nombre = padre.firstChild.dataset.nombre
-      
+
       borrarDelCarrito(nombre)
       enviarAlModal()
       quitarBtnEliminar(nombre)
@@ -280,7 +307,27 @@ function agregarEventoEliminar(array) {
   });
 }
 
-function quitarBtnEliminar(nombre){
+function agregarEventoInput() {
+  const arrayInput = Array.from(document.getElementsByClassName('inputModal'));
+  arrayInput.forEach(element => {
+    element.addEventListener('input', () => {
+      let nombre = element.dataset.nombre
+      let cantidad = element.value
+      let producto = {
+        "nombre": nombre,
+        "cantidad": cantidad
+      }
+      enviarAlCarrito(producto)
+      const arrayInput = Array.from(document.getElementsByClassName('is-valid'))
+      let input = arrayInput.find(element => element.dataset.btnnombre == nombre)
+      if (input) {
+        input.value = cantidad;
+      }
+    })
+  });
+}
+
+function quitarBtnEliminar(nombre) {
   const array = Array.from(document.getElementsByClassName('borrar'));
   const arrayCarrito = Array.from(document.getElementsByClassName('carrito-vacio'));
   const arrayInput = Array.from(document.getElementsByClassName('is-valid'))
@@ -288,11 +335,19 @@ function quitarBtnEliminar(nombre){
   let btnBorrar = array.find(element => element.dataset.btnnombre == nombre)
   let btnComprar = arrayCarrito.find(element => element.dataset.btnnombre == nombre)
   let input = arrayInput.find(element => element.dataset.btnnombre == nombre)
-  console.log(input)
-  btnBorrar.classList.add('d-none')
-  btnComprar.style = "font-size: 1.3rem"
-  input.value = "";
-  input.classList.remove('is-valid');
+
+  if (btnBorrar) {
+    btnBorrar.classList.add('d-none')
+  }
+
+  if (btnComprar) {
+    btnComprar.style = "font-size: 1.3rem"
+  }
+
+  if (input) {
+    input.value = "";
+    input.classList.remove('is-valid');
+  }
 }
 
 function getElementosIModal() {
@@ -313,7 +368,7 @@ function crearProductoModal(producto, index) {
 
   div.innerHTML =
     `<div class="col-6 d-flex align-items-center" data-nombre="${producto.nombre}">${producto.nombre}</div>
-     <div class="col-4 d-flex align-items-center"><input class="form-control" type="number" value="${producto.cantidad}"></div>
+     <div class="col-4 d-flex align-items-center"><input data-nombre="${producto.nombre}" min="1" class="form-control inputModal" type="number" value="${producto.cantidad}"></div>
      <div class="col-2 d-flex justify-content-center producto-modal-btnEliminar"><i id="${index}" class="bi bi-x fs-2 producto-modal-eliminar"></i></div>
   `
 
@@ -326,7 +381,8 @@ function modificarPrespuesto() {
   let mensaje = carritoGlobal.map(objeto => `${objeto.cantidad} ${objeto.nombre} `).join('; ');
   let mensajeCodificado = encodeURIComponent(mensaje);
   let link = document.getElementById('link')
-  link.href = `https://wa.me/59892731026?text=${mensajeCodificado}`
+  linkGlobal = `https://wa.me/59892731026?text=${mensajeCodificado}`
+  link.href = linkGlobal
 }
 
 function mostrarCarritoDelLocal() {
@@ -356,7 +412,7 @@ function buscar() {
 
 document.addEventListener('DOMContentLoaded', () => {
   modificarPrespuesto()
-
+  añadirEventoBtnModal()
   fetchData(jsonNombre());    // Se usa aqui fetchData para actualizar arrayDatos, ya que el fetch de fetchData dentro de traerInfo no llega a completarse correctamente(dentro de otras funciones en general)
   traerInfo(jsonNombre());
   let buscador = document.getElementById('buscador');
