@@ -70,8 +70,20 @@ function actualizarOpciones() {
   }
 }
 
-function preFiltro() {
-  let selector = document.getElementById('selector-filtro');
+const obtenerSelector = () =>{
+  return new Promise((resolve) => {
+    let interval = setInterval(() => {
+      const selector = document.getElementById('selector-filtro')
+      if(selector.options.length == 7){
+        clearInterval(interval)
+        resolve(selector)
+      }
+    }, 500);
+  })
+}
+
+async function preFiltro() {
+  const selector = await obtenerSelector()
   let selectOpcion = localStorage.getItem('tipoNombre');
 
   for (let i = 0; i < tipos.length; i++) {
