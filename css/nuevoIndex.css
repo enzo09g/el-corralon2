@@ -41,3 +41,21 @@ li{
     z-index: 100;
     width: 100%;
 }
+
+.whatsapp-titulo{
+    text-decoration: none;
+    color: white;
+}
+
+.whatsapp-titulo:hover{
+    color: greenyellow;
+}
+
+.ubicacion-titulo{
+    text-decoration: none;
+    color: white;
+}
+
+.ubicacion-titulo:hover{
+    color: lightblue;
+}
