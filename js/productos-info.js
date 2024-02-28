@@ -110,7 +110,7 @@ function mostrarLogo() {
 
 function mostrarArticulos(array) {
   mostrarLogo()
-  enviarAlModal()
+  enviarAlModal() // moverlo a cuando se hace click en el boton del carrito
   cuerpoTabla.innerHTML = ''
   array.forEach((element, index) => {
     if (carritoGlobal.some(item => item.nombre == element.nombre)) {
@@ -187,9 +187,8 @@ function añadirEventoCarrito(array) {
           "cantidad": cantidad
         }
         enviarAlCarrito(producto)
-        enviarAlModal()
-        mostrarCarrito()
-        mostrarCarritoDelLocal()
+        mostrarLogo()
+
       }
 
     })
@@ -213,8 +212,8 @@ function añadirEventoBorrar(array) {
       element.classList.add('d-none')
 
       borrarDelCarrito(nombre)
-      mostrarCarrito()
-      mostrarCarritoDelLocal()
+      mostrarLogo()
+
     })
   });
 }
@@ -243,57 +242,71 @@ function actualizarCarrito(array) {
 }
 
 function borrarDelCarrito(nombre) {
-  let index = carritoGlobal.findIndex(element => element.nombre == nombre);
-  carritoGlobal.splice(index, 1)
-  modificarPrespuesto()
-  actualizarCarrito(carritoGlobal)
+  console.log(nombre)
+    let index = carritoGlobal.findIndex(element => element.nombre == nombre);
+    console.log(index)
+    carritoGlobal.splice(index, 1)
+    modificarPrespuesto()
+    actualizarCarrito(carritoGlobal)
 }
 
-function enviarAlModal() {
+function vaciarContenedor() {
+  const contenedorModal = document.getElementById('contenedor-modal');
+  while (contenedorModal.firstChild) {
+    contenedorModal.removeChild();
+  }
+}
+
+async function enviarAlModal() {
   const contenedorModal = document.getElementById('contenedor-modal');
   contenedorModal.innerHTML = "";
+
   carritoGlobal.forEach((element, index) => {
     const productoModal = crearProductoModal(element, index);
     contenedorModal.appendChild(productoModal)
   });
+
+  const elementosI = await getElementosIModal();
+  agregarEventoEliminar(elementosI);
+}
+
+function agregarEventoEliminar(array) {
+  array.forEach((element) => {
+    element.addEventListener('click', (event) => {
+      let padre = element.parentNode
+      let nombre = padre.firstChild.dataset.nombre
+      
+      borrarDelCarrito(nombre)
+    })
+  });
+}
+
+function getElementosIModal() {
+  return new Promise((resolve) => {
+    let interval = setInterval(() => {
+      const arrayI = Array.from(document.getElementsByClassName('producto-modal-btnEliminar'));
+      if (arrayI.length == carritoGlobal.length) {
+        clearInterval(interval)
+        resolve(arrayI)
+      }
+    }, 200);
+  })
 }
 
 function crearProductoModal(producto, index) {
   const div = document.createElement('div');
-  div.id = index
-  div.classList.add('row')
-  div.classList.add('my-2')
-  div.classList.add('producto-modal')
-  div.classList.add('fs-6')
+  div.className = "row my-2 producto-modal fs-6"
 
-  const elementoI = crearContenedorI(index)
-
-  div.innerHTML = `
-      <div class="col-6 d-flex align-items-center">${producto.nombre}</div>
-      <div class="col-4 d-flex align-items-center"><input class="form-control" type="number" value="${producto.cantidad}"></div>
+  div.innerHTML =
+    `<div class="col-6 d-flex align-items-center" data-nombre="${producto.nombre}">${producto.nombre}</div>
+     <div class="col-4 d-flex align-items-center"><input class="form-control" type="number" value="${producto.cantidad}"></div>
+     <div class="col-2 d-flex justify-content-center producto-modal-btnEliminar"><i id="${index}" class="bi bi-x fs-2 producto-modal-eliminar"></i></div>
   `
 
-  div.appendChild(elementoI)
 
   return div;
 }
 
-function crearContenedorI(index) {
-  const elementoI = document.createElement('i');
-  const div = document.createElement('div');
-  div.classList.add('col-2')
-  div.classList.add('d-flex')
-  div.classList.add('justify-content-center')
-  div.classList.add('align-items-start')
-
-  elementoI.classList = `class="bi bi-x fs-2 producto-modal-eliminar`
-  elementoI.addEventListener('click', () => {
-    console.log("Funciono " + index)
-  })
-
-  div.appendChild(elementoI)
-  return div
-}
 
 function modificarPrespuesto() {
   let mensaje = carritoGlobal.map(objeto => `${objeto.cantidad} ${objeto.nombre} `).join('; ');
