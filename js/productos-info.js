@@ -91,7 +91,6 @@ function limpiarFIltros() {
     traerInfo(jsonNombre())
   }
   if (buscador.value != "") {
-    console.log("hola")
     let event = new Event('keyup', { bubbles: true });
     buscador.value = "";
     buscador.dispatchEvent(event);
@@ -101,8 +100,7 @@ function limpiarFIltros() {
   // selector.dispatchEvent(event);
 }
 
-function mostrarCarrito() {
-  console.log("ME ejecute")
+function mostrarLogo() {
   if (carritoGlobal.length >= 1) {
     carritoDiv.classList.contains('d-none') ? carritoDiv.classList.remove('d-none') : carritoDiv
   } else {
@@ -111,7 +109,8 @@ function mostrarCarrito() {
 }
 
 function mostrarArticulos(array) {
-  mostrarCarrito()
+  mostrarLogo()
+  enviarAlModal()
   cuerpoTabla.innerHTML = ''
   array.forEach((element, index) => {
     if (carritoGlobal.some(item => item.nombre == element.nombre)) {
@@ -187,7 +186,8 @@ function añadirEventoCarrito(array) {
           "nombre": nombre,
           "cantidad": cantidad
         }
-        let carritoActualizado = enviarAlCarrito(producto)
+        enviarAlCarrito(producto)
+        enviarAlModal()
         mostrarCarrito()
         mostrarCarritoDelLocal()
       }
@@ -247,6 +247,52 @@ function borrarDelCarrito(nombre) {
   carritoGlobal.splice(index, 1)
   modificarPrespuesto()
   actualizarCarrito(carritoGlobal)
+}
+
+function enviarAlModal() {
+  const contenedorModal = document.getElementById('contenedor-modal');
+  contenedorModal.innerHTML = "";
+  carritoGlobal.forEach((element, index) => {
+    const productoModal = crearProductoModal(element, index);
+    contenedorModal.appendChild(productoModal)
+  });
+}
+
+function crearProductoModal(producto, index) {
+  const div = document.createElement('div');
+  div.id = index
+  div.classList.add('row')
+  div.classList.add('my-2')
+  div.classList.add('producto-modal')
+  div.classList.add('fs-6')
+
+  const elementoI = crearContenedorI(index)
+
+  div.innerHTML = `
+      <div class="col-6 d-flex align-items-center">${producto.nombre}</div>
+      <div class="col-4 d-flex align-items-center"><input class="form-control" type="number" value="${producto.cantidad}"></div>
+  `
+
+  div.appendChild(elementoI)
+
+  return div;
+}
+
+function crearContenedorI(index) {
+  const elementoI = document.createElement('i');
+  const div = document.createElement('div');
+  div.classList.add('col-2')
+  div.classList.add('d-flex')
+  div.classList.add('justify-content-center')
+  div.classList.add('align-items-start')
+
+  elementoI.classList = `class="bi bi-x fs-2 producto-modal-eliminar`
+  elementoI.addEventListener('click', () => {
+    console.log("Funciono " + index)
+  })
+
+  div.appendChild(elementoI)
+  return div
 }
 
 function modificarPrespuesto() {

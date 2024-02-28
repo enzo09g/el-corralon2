@@ -45,3 +45,8 @@
     display: flex;
     justify-content: space-between;
 }
+
+.producto-modal-eliminar:hover{
+    cursor: pointer;
+    color: red;
+}
