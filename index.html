@@ -11,8 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/nuevoIndex.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/nuevoIndex.css">
 </head>
 
 <body>
@@ -51,18 +51,29 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-lg-5 row d-flex justify-content-end text-white">
-          <div class="col-md-6 col-lg-12">
-            <a class="display-6 whatsapp-titulo" target="_blank" href="https://wa.me/59898716205"> <i style="font-size: 3.5rem;" class="bi bi-whatsapp mx-2"></i>098716205 <i class="bi bi-telephone"></i> 47344143</a>
+        <div class="col-sm-12 col-lg-5 row d-flex justify-content-start align-content-around text-white">
+          <!-- Div whatsapp y telefono -->
+          <div class="col-sm-6 col-lg-12 d-flex row flex-lg-row">
+            <!-- Div whatsapp -->
+            <div class="justify-content-lg-start d-flex justify-content-center flex-lg-row col-lg-12">
+              <i class="bi-whatsapp iClase mx-2"></i>
+              <a class="display-6 whatsapp-titulo" target="_blank" href="https://wa.me/59898716205">098716205</a>
+            </div>
+            <!-- Div telefono -->
+            <div class="justify-content-lg-start d-flex justify-content-center col-lg-12">
+              <i class="bi bi-telephone iClase mx-2"></i>
+              <span class="display-6 whatsapp-titulo">47344143</span>
+            </div>
           </div>
-          <div class="col-md-6 col-lg-12">
-            <a class="display-6 ubicacion-titulo" href="#mapa"> <i style="font-size: 3.5rem;" class="bi bi-geo-alt"></i> 1º de Mayo 278, Salto</a>
+          <!-- Div direccion -->
+          <div class="col-sm-6 d-flex justify-content-center align-self-sm-start col-lg-12">
+            <a class="display-6 ubicacion-titulo" href="#mapa"> <i class="bi bi-geo-alt iClase"></i>
+              1º de Mayo 278, Salto</a>
           </div>
         </div>
       </div>
     </div>
   </header>
-  <!-- Features section-->
 
   <section class="py-5 border-bottom row justify-content-center" id="features">
     <div id="carouselExampleInterval" class="col-11 carousel carousel-dark slide" data-bs-ride="carousel">
@@ -93,7 +104,6 @@
     </div>
   </section>
 
-  <!-- Pricing section-->
 
   <section class="bg-light py-5 border-bottom">
 
@@ -101,7 +111,7 @@
       <h2 class="text-center bold display-3">Encuentranos y contáctanos fácilmente.</h2>
     </div>
     <div class="row mt-5">
-      <div class="col-sm-12 col-lg-7">
+      <div class="col-sm-12 col-lg-8">
         <div class="place-desc-large text-center">
           <div jstcache="24" class="place-name" jsan="7.place-name">Barraca El Corralon brinda la mejor respuesta al
             instanate</div>
@@ -114,10 +124,12 @@
           <div jstcache="24" class="place-name" jsan="7.place-name">El Corralón -Barraca de Hierros</div>
           <div jstcache="25" class="address" jsan="7.address">1º de Mayo 278, 50000 Salto, Departamento de Salto</div>
         </div>
-        <iframe
-          id="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3405.98901914527!2d-57.9490232325382!3d-31.38686630442961!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95addccddfcecec1%3A0x663ee45560ad7634!2sEl%20Corral%C3%B3n%20-Barraca%20de%20Hierros!5e0!3m2!1ses!2suy!4v1708543611567!5m2!1ses!2suy"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="row">
+          <iframe
+            id="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3405.98901914527!2d-57.9490232325382!3d-31.38686630442961!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95addccddfcecec1%3A0x663ee45560ad7634!2sEl%20Corral%C3%B3n%20-Barraca%20de%20Hierros!5e0!3m2!1ses!2suy!4v1708543611567!5m2!1ses!2suy"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
     </div>
 
@@ -130,6 +142,7 @@
 
 
   </section>
+
 
 
 

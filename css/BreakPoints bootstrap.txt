@@ -1,0 +1,28 @@
+/* Telefonos x-Small bootstrap */ 
+@media screen and (max-width: 575px){
+    
+}
+
+/* Telefoos sm bootstrap */
+
+@media screen and(min-width: 576px) and (max-width: 767px){
+    
+}
+
+/* Tablets md boostrap */
+
+@media screen and(min-width: 768px) and (max-width: 991px){
+    
+}
+
+/* computadoras portátiles lg bootstrap */
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+
+/* Comptuadoras de escritorio */
+
+@media screen and (min-width: 1200px) {
+    
+}
