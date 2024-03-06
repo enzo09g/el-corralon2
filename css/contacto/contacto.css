@@ -28,6 +28,11 @@ body {
     font-size: 18px;
 }
 
+.infoContacto:hover{
+    text-decoration: underline;
+    cursor: default;
+}
+
 body,
 button,
 input,
