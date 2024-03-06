@@ -1,0 +1,40 @@
+.bg-cover {
+    background: url("../../img/contacto/headerImagen.png");
+    background-size: cover !important;
+    background-position: center;
+    min-height: 300px;
+}
+
+body {
+    min-height: 100vh;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.titulo {
+    padding: .625em;
+    text-align: center;
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.Icontacto {
+    font-size: 1.1rem;
+    color: rgb(4, 52, 114)
+}
+
+.infoContacto {
+    font-size: 18px;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.7;
+    color: #777777;
+}
